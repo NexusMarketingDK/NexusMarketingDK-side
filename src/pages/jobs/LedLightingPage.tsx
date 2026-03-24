@@ -88,15 +88,15 @@ const LedLightingPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooker til Smart LED & IoT Belysning 2026 | Nexus Marketing"
-        description="Bliv mødebooker for Danmarks mest innovative smart LED-virksomhed. Præsenter AI-styret belysning, IoT-integration, Human Centric Lighting og Li-Fi teknologi til erhvervsvirksomheder."
+        title="Mødebooker til LED-belysning | Nexus Marketing"
+        description="Bliv mødebooker for innovative LED-løsninger til erhvervslivet. Attraktiv løn, fleksible vilkår og gode karrieremuligheder."
         canonical="/jobs/led-belysning"
-        keywords="smart LED 2026, IoT belysning, AI-styret lys, Human Centric Lighting, Li-Fi, intelligent belysning, mødebooker LED"
+        keywords="mødebooker, LED belysning, B2B salg, erhvervsbelysning, energieffektivitet"
       />
 
       <HeroSection
-        title="Mødebooker til Smart LED & IoT Belysning i 2026"
-        subtitle="Bliv mødebooker for fremtidens intelligente belysning. Præsenter AI-styrede systemer, IoT-integration, Human Centric Lighting og Li-Fi dataoverførsel til danske virksomheder."
+        title="Mødebooker til LED-belysning"
+        subtitle="Bliv en del af vores team og book møder med virksomheder, der ønsker innovative og energieffektive LED-løsninger."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"

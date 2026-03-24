@@ -63,15 +63,15 @@ const DebtCollectionPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooker til AI-Drevet Digital Inkasso 2026 | Nexus Marketing"
-        description="Bliv mødebooker for moderne digital inkasso med AI credit scoring, blockchain-verification, automated payment plans og empati-baseret debt recovery. Fremtidens inkassoløsninger."
+        title="Mødebooker til Inkasso | Nexus Marketing"
+        description="Bliv mødebooker for professionel inkasso. Hjælp virksomheder med effektiv debitorhåndtering og attraktiv løn."
         canonical="/jobs/inkasso"
-        keywords="digital inkasso 2026, AI credit scoring, blockchain inkasso, automated debt recovery, fintech, mødebooker"
+        keywords="mødebooker, inkasso, B2B salg, debitorhåndtering, erhvervsmøder"
       />
 
       <HeroSection
-        title="Mødebooker til AI-Drevet Digital Inkasso 2026"
-        subtitle="Præsenter cutting-edge inkassoteknologi: AI-baseret credit scoring, blockchain-verificerede fordringer, automated payment plans og empati-drevet digital kommunikation."
+        title="Mødebooker til Inkasso"
+        subtitle="Bliv en del af vores team og book møder med virksomheder, der har behov for professionel inkassohjælp og debitorhåndtering."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/5688887/pexels-photo-5688887.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"

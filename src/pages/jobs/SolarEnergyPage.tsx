@@ -58,15 +58,15 @@ const SolarEnergyPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooker til Perovskite Solceller & Energilagring 2026 | Nexus Marketing"
-        description="Bliv mødebooker for næste generation solceller med 35% effektivitet, bi-facial panels og AI-optimeret energilagring. Fremtidens vedvarende energi til danske familier og virksomheder."
+        title="Mødebooker til Solenergi | Nexus Marketing"
+        description="Bliv mødebooker for solcelleløsninger. Hjælp private og virksomheder med grøn energi og tjen godt på det."
         canonical="/jobs/solar-energy"
-        keywords="perovskite solceller 2026, bi-facial solar, energilagring, AI solar, tandem solceller, grøn energi, mødebooker"
+        keywords="mødebooker, solenergi, solceller, grøn energi, B2B/B2C salg"
       />
 
       <HeroSection
-        title="Mødebooker til Perovskite Solceller & Energilagring 2026"
-        subtitle="Præsenter cutting-edge solteknologi: Perovskite-silicium tandem celler med 35% effektivitet, bi-facial panels og AI-optimeret batterilagring. Fremtidens solenergi er her."
+        title="Mødebooker til Solenergi"
+        subtitle="Bliv en del af vores team og book møder med kunder, der ønsker at investere i solceller og grøn energi."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"

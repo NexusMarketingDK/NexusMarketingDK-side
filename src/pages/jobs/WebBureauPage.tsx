@@ -17,21 +17,21 @@ const WebBureauPage: React.FC = () => {
   }, []);
 
   const responsibilities = [
-    'Booking af kvalificerede møder med beslutningstagere omkring AI-drevne hjemmesider, SEO-automation og web3-løsninger',
-    'Præsentation af cutting-edge web-teknologier: headless CMS, JAMstack, AI-content generation og progressive web apps',
-    'Kvalificering af leads gennem behovsafdækning om moderne web-performance, Core Web Vitals og conversion-optimering',
-    'Samarbejde med tech-salgsteam om komplekse projekter inden for Next.js, React og serverless arkitektur',
-    'Vedligeholdelse af AI-assisteret CRM med smart lead-scoring og automated follow-up',
-    'Opfølgning på high-value enterprise kunder inden for digital transformation og cloud-migration'
+    'Booking af kvalificerede møder med beslutningstagere omkring hjemmesider og SEO-løsninger',
+    'Præsentation af professionelle web-løsninger og digitale services',
+    'Kvalificering af leads gennem behovsafdækning',
+    'Samarbejde med salgsteamet omkring mødeplanlægning',
+    'Vedligeholdelse af CRM-system med kundedata',
+    'Opfølgning på leads og potentielle kunder'
   ];
 
   const requirements = [
-    'Erfaring med tech B2B salg eller SaaS mødebooking (ønsket)',
-    'Stærke kommunikationsevner og evne til at forklare komplekse tech-løsninger',
-    'Forståelse for moderne web-teknologier, AI og digital transformation',
-    'Tech-savvy mindset og interesse for emerging technologies',
-    'Selvstændig, data-drevet og ekstremt resultatorienteret',
-    'Erfaring med moderne CRM-systemer og AI-værktøjer'
+    'Erfaring med B2B salg eller mødebooking (en fordel)',
+    'Stærke kommunikationsevner',
+    'Interesse for digitale løsninger og teknologi',
+    'Selvstændig og resultatorienteret',
+    'Struktureret arbejdsform',
+    'Gode IT-kundskaber'
   ];
 
   const benefits = [
@@ -62,23 +62,23 @@ const WebBureauPage: React.FC = () => {
   const marketInfo = [
     {
       icon: <Briefcase className="w-12 h-12 text-blue-600" />,
-      title: 'Om det innovative web-bureau',
-      description: 'Vi repræsenterer et cutting-edge digitalt bureau specialiseret i AI-drevne hjemmesider, headless CMS (Contentful, Sanity), Next.js/React development, SEO-automation og web3-integration. Med over 75 tech-eksperter og 500+ enterprise kunder leverer vi Danmarks mest avancerede web-løsninger.'
+      title: 'Om webbureauet',
+      description: 'Vi repræsenterer et etableret digitalt bureau specialiseret i professionelle hjemmesider, SEO-optimering og digital marketing. Med erfarne udviklere og mange tilfredse kunder leverer vi kvalitetsløsninger til danske virksomheder.'
     }
   ];
 
   return (
     <>
       <SEO
-        title="Mødebooker til AI-Drevne Hjemmesider & SEO Løsninger 2026 | Nexus Marketing"
-        description="Bliv mødebooker for cutting-edge AI-hjemmesider, SEO og web3-løsninger til danske virksomheder i 2026. Vi tilbyder provisionsløn uden grænser, moderne teknologi og gode udviklingsmuligheder."
+        title="Mødebooker til Webbureau | Nexus Marketing"
+        description="Bliv mødebooker for professionelle hjemmesider og SEO-løsninger. Vi tilbyder provisionsløn uden grænser og gode udviklingsmuligheder."
         canonical="/jobs/web-bureau"
-        keywords="mødebooker hjemmeside 2026, AI website SEO, digital marketing job, web3, headless CMS, Next.js, moderne webudvikling, webbureau job"
+        keywords="mødebooker, webbureau, hjemmesider, SEO, digital marketing job, B2B salg"
       />
 
       <HeroSection
-        title="Mødebooker til AI-Drevne Hjemmesider & SEO i 2026"
-        subtitle="Bliv mødebooker for fremtidens web-løsninger. Vi søger ambitiøse talenter til at præsentere AI-genererede hjemmesider, avanceret SEO-automation og web3-integration til danske virksomheder."
+        title="Mødebooker til Webbureau"
+        subtitle="Bliv en del af vores team og book møder med virksomheder, der ønsker professionelle hjemmesider og SEO-løsninger."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"

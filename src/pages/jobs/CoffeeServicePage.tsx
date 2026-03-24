@@ -58,15 +58,15 @@ const CoffeeServicePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooker til Smart Coffee & IoT Kaffeautomater 2026 | Nexus Marketing"
-        description="Bliv mødebooker for AI-styrede kaffeautomater, IoT-monitoring og bæredygtige specialty coffee løsninger. Premium kaffeservice med smart teknologi til danske virksomheder."
+        title="Mødebooker til Kaffeservice | Nexus Marketing"
+        description="Bliv mødebooker for professionelle kaffeløsninger til virksomheder. Attraktiv løn, fleksible vilkår og grundig oplæring i kaffebranchen."
         canonical="/jobs/coffee-service"
-        keywords="smart kaffeautomat 2026, IoT kaffe, AI coffee, specialty coffee, bæredygtig kaffe, mødebooker"
+        keywords="mødebooker, kaffeservice, B2B salg, erhvervsmøder, kaffemaskiner"
       />
 
       <HeroSection
-        title="Mødebooker til Smart Coffee & IoT Kaffeautomater 2026"
-        subtitle="Præsenter AI-styrede kaffeautomater med personalisering, IoT-monitoring, bæredygtig specialty coffee og predictive maintenance. Kaffeoplevelsen møder cutting-edge teknologi."
+        title="Mødebooker til Kaffeservice"
+        subtitle="Bliv en del af vores team og book møder med virksomheder, der ønsker professionelle kaffeløsninger til deres medarbejdere og kunder."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/4820714/pexels-photo-4820714.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"

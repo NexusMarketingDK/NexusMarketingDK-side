@@ -55,15 +55,15 @@ const EnergySalesPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Sælger til Smart Energy & Batterilagring 2026 | Nexus Marketing"
-        description="Bliv sælger af smart energy-løsninger med AI-optimering, V2G teknologi og hjemmebatterier i 2026. Vi søger engagerede sælgere til at rådgive om moderne energioptimering og selvforsyning."
+        title="Energisælger | Nexus Marketing"
+        description="Bliv energisælger og hjælp private husstande med at spare på energien. Attraktiv løn, gode vilkår og grundig oplæring."
         canonical="/jobs/energy-sales"
-        keywords="smart energy 2026, V2G, hjemmebatteri, AI energioptimering, vehicle-to-grid, energisælger, grøn energi"
+        keywords="energisælger, B2C salg, energibesparelser, provision, job"
       />
 
       <HeroSection
-        title="Sælger til Smart Energy & Batterilagring 2026"
-        subtitle="Sælg fremtidens energiløsninger: AI-optimerede systemer, V2G (Vehicle-to-Grid), hjemmebatterier og virtuelle kraftværker. Hjælp familier med at blive energi-selvforsynende."
+        title="Energisælger"
+        subtitle="Bliv energisælger og hjælp private husstande med at reducere deres energiforbrug og spare på regningen."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
