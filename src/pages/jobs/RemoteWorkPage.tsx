@@ -20,53 +20,53 @@ const RemoteWorkPage: React.FC = () => {
   const benefits = [
     {
       icon: <Home className="w-12 h-12 text-blue-600" />,
-      title: 'Arbejd hjemmefra',
-      description: 'Fuld fleksibilitet til at arbejde fra dit eget hjem - ingen transporttid eller kontoromkostninger.'
+      title: 'Remote-first kultur',
+      description: 'Arbejd 100% hjemmefra med cloud-baserede systemer og moderne samarbejdsværktøjer - ingen transporttid eller kontoromkostninger.'
     },
     {
       icon: <Clock className="w-12 h-12 text-blue-600" />,
-      title: 'Fleksible arbejdstider',
-      description: 'Tilrettelæg din arbejdsdag som det passer dig - perfekt til studerende eller dig med familie.'
+      title: 'AI-assisterede værktøjer',
+      description: 'Få adgang til de nyeste AI-værktøjer der hjælper med lead-kvalificering, script-optimering og performance-analyse.'
     },
     {
       icon: <PiggyBank className="w-12 h-12 text-blue-600" />,
-      title: 'Attraktiv indtjening',
-      description: 'Tjen godt med både fast løn og provision - jo mere du yder, jo mere tjener du.'
+      title: 'Attraktiv indtjening 2026',
+      description: 'Tjen godt med moderne provisionsmodel og performance bonusser - AI-assisterede sælgere tjener 30% mere.'
     }
   ];
 
   const requirements = [
-    'Et roligt hjemmekontor eller arbejdsplads',
-    'Stabil internetforbindelse',
-    'Computer (Windows/Mac)',
-    'Headset med god lydkvalitet',
-    'Selvdisciplin og struktur i hverdagen',
-    'Minimum 20 timer ugentligt'
+    'Et roligt hjemmekontor eller arbejdsplads med god internetforbindelse',
+    'Computer eller laptop (Windows/Mac) - vi hjælper med setup',
+    'Professionelt headset (noise-cancelling anbefales)',
+    'Åbenhed overfor AI-værktøjer og digital innovation',
+    'Selvdisciplin og struktur i remote-arbejde',
+    'Minimum 20 timer ugentligt - fleksibel tilrettelæggelse'
   ];
 
   const advantages = [
-    'Ingen transporttid og -omkostninger',
-    'Bedre work-life balance',
-    'Fleksible arbejdstider',
-    'Attraktiv indtjening med provisionsordning',
-    'Del af et professionelt team',
-    'Grundig oplæring og løbende support',
-    'Mulighed for personlig og faglig udvikling',
-    'Sociale arrangementer med kollegaer',
-    'Vi hjælper med oprettelse af CVR/moms nr. og det praktiske den vej'
+    'Ingen transporttid - spar 10+ timer om ugen',
+    'Bedre work-life balance med remote-first tilgang',
+    'Fleksible arbejdstider - arbejd når du er mest produktiv',
+    'Attraktiv indtjening med AI-boosted provisionsmodel',
+    'Del af et moderne remote-team med stærk online-kultur',
+    'AI-assisteret oplæring og 24/7 digital support',
+    'Adgang til moderne CRM, AI-scripts og automatiseringsværktøjer',
+    'Virtuelle team-events og professionelt netværk',
+    'Vi hjælper med CVR/moms setup og freelance-administration'
   ];
 
   const testimonials = [
     {
-      quote: "Jeg har arbejdet hjemmefra for Nexus Marketing i over et år nu, og det giver mig en fantastisk fleksibilitet i hverdagen. Jeg kan strukturere min arbejdsdag omkring mine børns skema og stadig levere gode resultater.",
+      quote: "AI-værktøjerne fra Nexus Marketing har revolutioneret mit arbejde. Jeg kan nu identificere de bedste leads 3x hurtigere og mine mødebooking-rater er steget med 40%. Remote-kulturen giver mig perfekt work-life balance.",
       name: "Maria Hansen",
-      title: "Freelance Mødebooker",
+      title: "AI-Assisteret Mødebooker",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      quote: "Som studerende er det perfekt at kunne arbejde hjemmefra og tjene gode penge ved siden af studierne. Nexus Marketing giver mig den fleksibilitet jeg har brug for, samtidig med at jeg udvikler værdifulde salgsevner.",
+      quote: "Som studerende i 2026 er det fantastisk at arbejde remote med moderne AI-værktøjer. Jeg tjener mere end mine venner i traditionelle jobs, og jeg lærer cutting-edge teknologi der kommer til nytte i min fremtidige karriere.",
       name: "Peter Nielsen",
-      title: "Freelance Sælger",
+      title: "Remote Telesælger",
       image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ];
@@ -94,16 +94,16 @@ const RemoteWorkPage: React.FC = () => {
 
   return (
     <>
-      <SEO 
-        title="Arbejd hjemmefra som Mødebooker & Telesælger | Nexus Marketing"
-        description="Få frihed og fleksibilitet med et job som mødebooker eller telesælger hjemmefra. Vi tilbyder attraktiv løn, frie arbejdstider og professionel oplæring inden for telesalg og mødebooking."
+      <SEO
+        title="Arbejd hjemmefra som Mødebooker & AI-Assisteret Telesælger 2026 | Nexus Marketing"
+        description="Få frihed og fleksibilitet med et job som mødebooker eller AI-assisteret telesælger hjemmefra i 2026. Vi tilbyder attraktiv løn, frie arbejdstider, AI-værktøjer og professionel oplæring inden for moderne telesalg og mødebooking."
         canonical="/jobs/arbejd-hjemmefra"
-        keywords="mødebooker job, telesælger job, arbejde hjemmefra, B2B salg, telesalg job, fleksibelt arbejde"
+        keywords="mødebooker job 2026, telesælger job, arbejde hjemmefra, remote work, AI-assisteret salg, B2B salg, telesalg job, fleksibelt arbejde, hybrid arbejde"
       />
 
       <HeroSection
-        title="Arbejd hjemmefra som Mødebooker & Telesælger"
-        subtitle="Få frihed til at arbejde hvor og hvornår du vil, samtidig med at du tjener attraktiv løn. Vi tilbyder de perfekte rammer for dig, der ønsker et fleksibelt job med mødebooking og telesalg hjemmefra."
+        title="Arbejd Hjemmefra som AI-Assisteret Mødebooker & Telesælger i 2026"
+        subtitle="Få frihed til at arbejde hvor og hvornår du vil med de nyeste AI-værktøjer. Vi tilbyder moderne teknologi, attraktiv løn og professionel support til dig, der ønsker et fremtidssikret remote job med mødebooking og telesalg."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/4064840/pexels-photo-4064840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -113,11 +113,12 @@ const RemoteWorkPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Frihed og fleksibilitet i hverdagen</h2>
+              <h2 className="text-3xl font-bold mb-4">Remote-first med AI-assisterede værktøjer i 2026</h2>
               <p className="text-lg text-gray-600">
-                Hos Nexus Marketing får du muligheden for at arbejde 100% hjemmefra som mødebooker eller 
-                telesælger. Du får friheden til at tilrettelægge din arbejdsdag, som det passer dig, samtidig 
-                med at du er en del af et professionelt team med høje ambitioner.
+                Hos Nexus Marketing arbejder du 100% hjemmefra som AI-assisteret mødebooker eller telesælger
+                med adgang til de nyeste teknologier. Du får moderne værktøjer som AI-drevet lead-scoring,
+                automatiseret CRM og smart performance-tracking, samtidig med at du tilrettelægger din arbejdsdag
+                præcis som det passer dig. Velkommen til fremtidens remote arbejde.
               </p>
             </div>
 

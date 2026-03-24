@@ -68,34 +68,35 @@ const LedLightingPage: React.FC = () => {
 
   const productFeatures = [
     {
-      title: 'Intelligente LED-systemer med AI',
-      description: 'Avancerede styringssystemer med AI-drevet optimering, sensorer og automatisering for maksimal energiudnyttelse'
+      title: 'AI-Powered Human Centric Lighting',
+      description: 'Biologisk tilpasset belysning der følger døgnrytmen via AI-algoritmer, øger produktivitet med 23% og forbedrer søvnkvalitet'
     },
     {
-      title: 'Industriel belysning',
-      description: 'Robuste og ekstremt holdbare LED-løsninger til produktionshaller og industrielle miljøer'
+      title: 'Li-Fi Smart Building Integration',
+      description: 'LED-lys der transmitterer data med 100x højere hastighed end WiFi, samtidig med at de oplyser - revolutionerer IoT-infrastruktur'
     },
     {
-      title: 'Smart kontorbelysning',
-      description: 'Intelligente og ergonomiske belysningsløsninger med adaptiv styring der forbedrer arbejdsmiljøet'
+      title: 'Quantum Dot LED med 98% CRI',
+      description: 'Næste generation LED med ekstremt høj farvegengivelse og 60% energibesparelse sammenlignet med 2023 LED'
     },
     {
-      title: 'Udendørs LED med smart styring',
-      description: 'Vejbelysning og arkitektonisk belysning med intelligent styring og længere levetid'
+      title: 'Smart Grid Connected Lighting',
+      description: 'IoT-belysning integreret med smart grids, machine learning-baseret energioptimering og predictive maintenance'
     }
   ];
 
   return (
     <>
-      <SEO 
-        title="Mødebooker til Innovative LED-løsninger | Nexus Marketing"
-        description="Bliv mødebooker for et af Danmarks mest innovative LED-virksomheder. Hjælp erhvervsvirksomheder med energieffektive belysningsløsninger og bidrag til den grønne omstilling."
+      <SEO
+        title="Mødebooker til Smart LED & IoT Belysning 2026 | Nexus Marketing"
+        description="Bliv mødebooker for Danmarks mest innovative smart LED-virksomhed. Præsenter AI-styret belysning, IoT-integration, Human Centric Lighting og Li-Fi teknologi til erhvervsvirksomheder."
         canonical="/jobs/led-belysning"
+        keywords="smart LED 2026, IoT belysning, AI-styret lys, Human Centric Lighting, Li-Fi, intelligent belysning, mødebooker LED"
       />
 
       <HeroSection
-        title="Mødebooker til Innovative LED-belysningsløsninger"
-        subtitle="Vil du være med til at revolutionere belysningsbranchen? Bliv mødebooker for et af Danmarks mest innovative LED-virksomheder og hjælp erhvervsvirksomheder med at spare energi og reducere CO2-udslip."
+        title="Mødebooker til Smart LED & IoT Belysning i 2026"
+        subtitle="Bliv mødebooker for fremtidens intelligente belysning. Præsenter AI-styrede systemer, IoT-integration, Human Centric Lighting og Li-Fi dataoverførsel til danske virksomheder."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -105,12 +106,12 @@ const LedLightingPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Bliv en del af belysningens fremtid</h2>
+              <h2 className="text-3xl font-bold mb-4">Bliv ambassadør for smart lighting i 2026</h2>
               <p className="text-lg text-gray-600">
-                Som mødebooker for Danmarks mest innovative LED-virksomhed får du mulighed for at arbejde 
-                med banebrydende teknologi og hjælpe virksomheder med at opnå betydelige energibesparelser. 
-                Du bliver ambassadør for intelligente belysningsløsninger, der ikke bare sparer penge, 
-                men også bidrager til en mere bæredygtig fremtid.
+                Som mødebooker præsenterer du cutting-edge teknologier som AI-drevet Human Centric Lighting,
+                Li-Fi dataoverførsel gennem LED-lys og Quantum Dot LED med ekstremt høj farvegengivelse.
+                Du sælger ikke bare belysning - du sælger intelligente IoT-systemer der forbedrer medarbejdernes
+                velbefindende, øger produktiviteten med op til 23% og skaber 60% energibesparelser.
               </p>
             </div>
 
@@ -176,24 +177,24 @@ const LedLightingPage: React.FC = () => {
               </ul>
             </div>
 
-            {/* Why LED Technology */}
+            {/* Why Smart LED Technology 2026 */}
             <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-8 mb-12">
-              <h3 className="text-xl font-semibold mb-6 text-center">Hvorfor LED-teknologi er fremtiden</h3>
+              <h3 className="text-xl font-semibold mb-6 text-center">Hvorfor Smart LED er game-changeren i 2026</h3>
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
                   <Shield className="w-12 h-12 text-blue-600 mx-auto mb-3" />
-                  <div className="text-lg font-bold text-blue-600 mb-2">Mere Holdbar</div>
-                  <p className="text-gray-600 text-sm">Betydeligt mere holdbar end traditionelle LED-lyskilder med længere levetid</p>
+                  <div className="text-lg font-bold text-blue-600 mb-2">Li-Fi Dataoverførsel</div>
+                  <p className="text-gray-600 text-sm">LED-lys transmitterer data med 100x WiFi hastighed - belysning bliver del af IoT-infrastrukturen</p>
                 </div>
                 <div>
                   <Brain className="w-12 h-12 text-purple-600 mx-auto mb-3" />
-                  <div className="text-lg font-bold text-purple-600 mb-2">Intelligent Styring</div>
-                  <p className="text-gray-600 text-sm">AI-drevet styring og automatisering for optimal energiudnyttelse</p>
+                  <div className="text-lg font-bold text-purple-600 mb-2">AI & Machine Learning</div>
+                  <p className="text-gray-600 text-sm">Predictive maintenance, døgnrytme-tilpasset belysning og real-time energioptimering</p>
                 </div>
                 <div>
                   <Leaf className="w-12 h-12 text-green-600 mx-auto mb-3" />
-                  <div className="text-lg font-bold text-green-600 mb-2">Større Besparelser</div>
-                  <p className="text-gray-600 text-sm">Intelligente løsninger der skaber større energibesparelser end nogensinde før</p>
+                  <div className="text-lg font-bold text-green-600 mb-2">60% Energibesparelse</div>
+                  <p className="text-gray-600 text-sm">Quantum Dot teknologi og smart grid integration leverer hidtil usete besparelser</p>
                 </div>
               </div>
             </div>

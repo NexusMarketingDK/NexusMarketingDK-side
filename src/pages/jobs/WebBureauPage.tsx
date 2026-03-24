@@ -17,21 +17,21 @@ const WebBureauPage: React.FC = () => {
   }, []);
 
   const responsibilities = [
-    'Booking af kvalificerede møder med beslutningstagere i mellemstore og store virksomheder omkring hjemmeside og SEO løsninger',
-    'Præsentation af bureauets digitale marketing-, hjemmeside- og SEO-services til danske virksomheder',
-    'Grundig kvalificering af leads gennem behovsafdækning omkring hjemmeside, SEO og digital synlighed',
-    'Tæt samarbejde med salgsteamet omkring mødeplanlægning for hjemmeside og SEO projekter',
-    'Vedligeholdelse af CRM-system med opdaterede kundedata og projektinformation',
-    'Opfølgning på leads og potentielle kunder inden for hjemmeside og SEO services'
+    'Booking af kvalificerede møder med beslutningstagere omkring AI-drevne hjemmesider, SEO-automation og web3-løsninger',
+    'Præsentation af cutting-edge web-teknologier: headless CMS, JAMstack, AI-content generation og progressive web apps',
+    'Kvalificering af leads gennem behovsafdækning om moderne web-performance, Core Web Vitals og conversion-optimering',
+    'Samarbejde med tech-salgsteam om komplekse projekter inden for Next.js, React og serverless arkitektur',
+    'Vedligeholdelse af AI-assisteret CRM med smart lead-scoring og automated follow-up',
+    'Opfølgning på high-value enterprise kunder inden for digital transformation og cloud-migration'
   ];
 
   const requirements = [
-    'Dokumenteret erfaring med B2B salg eller mødebooking',
-    'Stærke kommunikationsevner og overbevisende telefonstemme',
-    'Forretningsforståelse og evne til at spotte potentiale inden for hjemmeside og SEO',
-    'Selvstændig, resultatorienteret og struktureret arbejdsform',
-    'Interesse for digital marketing, hjemmesider og SEO-optimering',
-    'Gode IT-kundskaber og erfaring med CRM-systemer'
+    'Erfaring med tech B2B salg eller SaaS mødebooking (ønsket)',
+    'Stærke kommunikationsevner og evne til at forklare komplekse tech-løsninger',
+    'Forståelse for moderne web-teknologier, AI og digital transformation',
+    'Tech-savvy mindset og interesse for emerging technologies',
+    'Selvstændig, data-drevet og ekstremt resultatorienteret',
+    'Erfaring med moderne CRM-systemer og AI-værktøjer'
   ];
 
   const benefits = [
@@ -62,23 +62,23 @@ const WebBureauPage: React.FC = () => {
   const marketInfo = [
     {
       icon: <Briefcase className="w-12 h-12 text-blue-600" />,
-      title: 'Om bureauet',
-      description: 'Vi er et af Danmarks førende digitale bureauer med fokus på hjemmesider, SEO-optimering, digital marketing og e-commerce løsninger. Med over 50 dedikerede medarbejdere og mere end 300 aktive kunder er vi i konstant vækst.'
+      title: 'Om det innovative web-bureau',
+      description: 'Vi repræsenterer et cutting-edge digitalt bureau specialiseret i AI-drevne hjemmesider, headless CMS (Contentful, Sanity), Next.js/React development, SEO-automation og web3-integration. Med over 75 tech-eksperter og 500+ enterprise kunder leverer vi Danmarks mest avancerede web-løsninger.'
     }
   ];
 
   return (
     <>
-      <SEO 
-        title="Erfaren Mødebooker søges til Hjemmeside & SEO Bureau | Nexus Marketing"
-        description="Vil du være mødebooker for hjemmeside og SEO løsninger til danske virksomheder? Vi tilbyder provisionsløn uden grænser, professionelt miljø og gode udviklingsmuligheder."
+      <SEO
+        title="Mødebooker til AI-Drevne Hjemmesider & SEO Løsninger 2026 | Nexus Marketing"
+        description="Bliv mødebooker for cutting-edge AI-hjemmesider, SEO og web3-løsninger til danske virksomheder i 2026. Vi tilbyder provisionsløn uden grænser, moderne teknologi og gode udviklingsmuligheder."
         canonical="/jobs/web-bureau"
-        keywords="mødebooker hjemmeside, SEO mødebooker, digital marketing job, hjemmeside salg, SEO salg, webbureau job"
+        keywords="mødebooker hjemmeside 2026, AI website SEO, digital marketing job, web3, headless CMS, Next.js, moderne webudvikling, webbureau job"
       />
 
       <HeroSection
-        title="Erfaren Mødebooker søges til Hjemmeside & SEO Løsninger"
-        subtitle="Er du klar til at tage næste skridt i din karriere? Vi søger ambitiøse mødebookere til at hjælpe danske virksomheder med professionelle hjemmesider og SEO-optimering."
+        title="Mødebooker til AI-Drevne Hjemmesider & SEO i 2026"
+        subtitle="Bliv mødebooker for fremtidens web-løsninger. Vi søger ambitiøse talenter til at præsentere AI-genererede hjemmesider, avanceret SEO-automation og web3-integration til danske virksomheder."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

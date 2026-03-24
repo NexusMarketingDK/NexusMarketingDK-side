@@ -17,11 +17,11 @@ const EnergySalesPage: React.FC = () => {
   }, []);
 
   const responsibilities = [
-    'Opsøgende salg af energiløsninger til private husstande',
-    'Rådgivning om energioptimering og besparelsesmuligheder',
-    'Udarbejdelse af tilbud og kontrakter',
-    'Opfølgning på leads og vedligeholdelse af kundeportefølje',
-    'Koordinering med tekniske konsulenter omkring kundebesøg'
+    'Opsøgende salg af smart energy-løsninger: hjemmebatterier, V2G-systemer og AI-optimering',
+    'Rådgivning om energi-selvforsyning, virtual power plants og smart grid integration',
+    'Præsentation af moderne teknologier som bidirectional charging og peak shaving',
+    'AI-assisteret behovsanalyse og tilbudsudarbejdelse',
+    'Koordinering med tech-team omkring installation af avancerede energisystemer'
   ];
 
   const requirements = [
@@ -54,15 +54,16 @@ const EnergySalesPage: React.FC = () => {
 
   return (
     <>
-      <SEO 
-        title="Sælger til Energiløsninger | Nexus Marketing"
-        description="Bliv energisælger med attraktiv provision og gode udviklingsmuligheder. Vi søger engagerede sælgere til at rådgive private kunder om energioptimering."
+      <SEO
+        title="Sælger til Smart Energy & Batterilagring 2026 | Nexus Marketing"
+        description="Bliv sælger af smart energy-løsninger med AI-optimering, V2G teknologi og hjemmebatterier i 2026. Vi søger engagerede sælgere til at rådgive om moderne energioptimering og selvforsyning."
         canonical="/jobs/energy-sales"
+        keywords="smart energy 2026, V2G, hjemmebatteri, AI energioptimering, vehicle-to-grid, energisælger, grøn energi"
       />
 
       <HeroSection
-        title="Sælger til Energiløsninger"
-        subtitle="Vil du hjælpe private husstande med at spare på energien? Bliv energisælger og få en spændende hverdag med gode indtjeningsmuligheder."
+        title="Sælger til Smart Energy & Batterilagring 2026"
+        subtitle="Sælg fremtidens energiløsninger: AI-optimerede systemer, V2G (Vehicle-to-Grid), hjemmebatterier og virtuelle kraftværker. Hjælp familier med at blive energi-selvforsynende."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

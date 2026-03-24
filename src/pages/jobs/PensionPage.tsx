@@ -62,16 +62,16 @@ const PensionPage: React.FC = () => {
 
   return (
     <>
-      <SEO 
-        title="Mødebooker til Pensionsordninger | Nexus Marketing"
-        description="Bliv mødebooker inden for pensionsordninger og hjælp danskere med at sikre deres økonomiske fremtid. Vi tilbyder fleksible arbejdstider og gode udviklingsmuligheder i pensionsbranchen."
+      <SEO
+        title="Mødebooker til AI-Drevet Pension & ESG Investering 2026 | Nexus Marketing"
+        description="Bliv mødebooker for moderne pensionsløsninger med AI portfolio-optimering, ESG investering, crypto-pension og personaliseret longevity-planning. Fremtidens pensionsrådgivning."
         canonical="/jobs/pensionsordning"
-        keywords="mødebooker pension, pensionsrådgivning, pensionsordning, finansiel rådgivning, karriere pension"
+        keywords="AI pension 2026, ESG investering, crypto pension, robo-advisor, digital pensionsrådgivning, longevity planning"
       />
 
       <HeroSection
-        title="Mødebooker til Pensionsordninger"
-        subtitle="Vil du være med til at hjælpe danskere med at sikre deres økonomiske fremtid? Bliv mødebooker hos en af Danmarks førende aktører inden for pensionsrådgivning."
+        title="Mødebooker til AI-Drevet Pension & ESG Investering 2026"
+        subtitle="Præsenter moderne pensionsløsninger: AI robo-advisors, ESG-optimerede porteføljer, crypto-pension integration og personaliseret longevity-planning baseret på genetisk data."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg"
