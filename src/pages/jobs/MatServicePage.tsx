@@ -82,15 +82,15 @@ const MatServicePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooker til Smart Facility & IoT Måtteservice 2026 | Nexus Marketing"
-        description="Bliv mødebooker for smart facility management med IoT-måtter, AI-baseret predictive maintenance og bæredygtige nano-coating løsninger. Fremtidens facility service."
+        title="Mødebooker til Måtteservice | Nexus Marketing"
+        description="Bliv mødebooker for professionel måtteservice. Sælg kvalitetsløsninger til erhverv med attraktiv løn og gode arbejdsvilkår."
         canonical="/jobs/mat-service"
-        keywords="smart facility 2026, IoT måtter, AI facility management, nano-coating, predictive maintenance, mødebooker"
+        keywords="mødebooker, måtteservice, B2B salg, facility service, erhvervsmøder"
       />
 
       <HeroSection
-        title="Mødebooker til Smart Facility & IoT Måtteservice 2026"
-        subtitle="Præsenter næste generation facility management: IoT-aktiverede måtter med sensor-teknologi, AI predictive maintenance, selv-rensende nano-coatings og real-time hygiejne-monitoring."
+        title="Mødebooker til Måtteservice"
+        subtitle="Bliv en del af vores team og book møder med virksomheder, der ønsker professionelle måtteserviceløsninger til deres indgangspartier."
         ctaText="Ansøg nu"
         ctaLink="#apply"
         backgroundImage="https://images.pexels.com/photos/6466236/pexels-photo-6466236.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
