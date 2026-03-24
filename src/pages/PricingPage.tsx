@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Phone, Users, Target, BarChart3, Euro, Clock, Shield, Award } from 'lucide-react';
+import { CheckCircle, ArrowRight, Phone, Users, Target, Euro, Clock, Shield, Award, TrendingUp, ChevronDown, ChevronUp } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 
 const PricingPage: React.FC = () => {
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
   useEffect(() => {
-    // Add Tally script
     const script = document.createElement('script');
     script.innerHTML = `var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}`;
     document.body.appendChild(script);
@@ -16,185 +17,149 @@ const PricingPage: React.FC = () => {
     };
   }, []);
 
-  const pricingPackages = [
+  const pricingModels = [
     {
-      name: 'Starter Pakke',
-      price: 'Fra 15.000 kr./md',
-      description: 'Perfekt til mindre virksomheder der vil teste telemarketing',
+      title: 'No Cure No Pay',
+      subtitle: 'Betal kun for resultater',
+      description: 'Den risikofrie løsning - du betaler kun for gennemførte, kvalificerede møder',
       features: [
-        '40 timer telemarketing/mødebooking pr. måned',
+        'Ingen forudgående investering',
+        'Fast pris pr. gennemført møde',
+        'Du definerer kvalitetskriterierne',
+        'Kun betaling for møder der lever op til kravene',
+        'Ingen betaling ved aflyste møder',
+        'Skalerbar efter behov',
+        'Perfekt til test af nye markeder',
+        'Resultatorienteret samarbejde'
+      ],
+      highlight: true,
+      icon: Award
+    },
+    {
+      title: 'Pakkeløsning',
+      subtitle: 'Fast månedlig ydelse',
+      description: 'Den mest omkostningseffektive løsning til kontinuerlig mødebooking',
+      features: [
         'Dedikeret mødebooker',
-        'Grundlæggende CRM integration',
-        'Ugentlig rapportering',
-        'Email og telefon support',
-        'Minimum 3 måneders kontrakt'
+        'Garanteret antal salgsmøder',
+        'Billigste pris per møde',
+        'Aflyste møder erstattes gratis',
+        'Løbende optimering af strategi',
+        'Månedlig rapportering',
+        'Fleksibel opsigelse',
+        'Prioriteret support'
       ],
-      popular: false,
-      ctaText: 'Kom i gang'
-    },
-    {
-      name: 'Pay-Per-Meeting Model',
-      price: 'Fast pris pr. møde',
-      description: 'Betal kun for succesfuldt bookede møder - ingen risiko, maksimal kontrol',
-      features: [
-        'Kun betaling for gennemførte møder',
-        'Fast pris pr. salgsmøde aftalt på forhånd',
-        'Præcis budgetkontrol og forudsigelighed',
-        'Ingen månedlige faste omkostninger',
-        'Skalerbar efter jeres behov',
-        'Perfekt til sæsonbetonede virksomheder',
-        'Uforpligtende start - test vores kvalitet'
-      ],
-      popular: true,
-      ctaText: 'Få uforpligtende tilbud',
-      highlight: 'No Cure No Pay'
-    },
-    {
-      name: 'Enterprise Pakke',
-      price: 'Fra 45.000 kr./md',
-      description: 'Omfattende løsning til store virksomheder med komplekse behov',
-      features: [
-        '120+ timer telemarketing/mødebooking pr. måned',
-        'Dedikeret team på 3-4 specialister',
-        'Fuld CRM og marketing automation integration',
-        'Ugentlig strategimøder og rapportering',
-        'Kampagneoptimering og A/B testing',
-        'Dedikeret account manager',
-        'Skræddersyet kontrakt og SLA'
-      ],
-      popular: false,
-      ctaText: 'Kontakt os'
+      highlight: false,
+      icon: Target
     }
   ];
 
-  const additionalServices = [
+  const faqItems = [
     {
-      icon: <Target className="w-8 h-8 text-blue-600" />,
-      service: 'Lead Kvalificering',
-      price: 'Fra 150 kr. pr. kvalificeret lead',
-      description: 'Grundig screening og kvalificering af indkommende leads'
+      question: 'Hvad koster professionel mødebooking hos Nexus Marketing?',
+      answer: 'Prisen på mødebooking afhænger af flere faktorer: din branche, målgruppens kompleksitet, geografisk område og den valgte betalingsmodel. Vi tilbyder både No Cure No Pay (betaling pr. gennemført møde) og faste pakkeløsninger. Med No Cure No Pay betaler du typisk mellem 800-2.000 kr. pr. kvalificeret møde, mens pakkeløsninger starter fra ca. 15.000 kr./md. Kontakt os for et skræddersyet tilbud på mødebooking baseret på dine specifikke behov.'
     },
     {
-      icon: <Phone className="w-8 h-8 text-blue-600" />,
-      service: 'Enkelt Mødebooking',
-      price: 'Fra 800 kr. pr. booket møde',
-      description: 'Betaling kun for succesfuldt bookede møder med beslutningstagere'
+      question: 'Hvordan fungerer No Cure No Pay mødebooking?',
+      answer: 'Med vores No Cure No Pay model betaler du udelukkende for møder, der lever op til jeres på forhånd aftalte kvalitetskrav. Vi definerer sammen, hvad der udgør et vellykket møde - f.eks. mødevarighed, deltagerprofil, beslutningskompetence eller konkrete forretningsmuligheder. Aflyste, ikke-fremmødte eller useriøse møder faktureres ikke. Du har fuld kontrol og nul risiko.'
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
-      service: 'Markedsundersøgelse',
-      price: 'Fra 25.000 kr. pr. projekt',
-      description: 'Omfattende markedsanalyse og kundefeedback indsamling'
+      question: 'Hvad er forskellen på No Cure No Pay og pakkeløsning?',
+      answer: 'No Cure No Pay er ideelt hvis du vil teste mødebooking uden store investeringer, har sæsonbetonet behov, eller ønsker maksimal fleksibilitet. Du betaler kun for resultater. Pakkeløsningen giver den laveste pris pr. møde og er bedst til virksomheder med kontinuerligt behov for mødebooking. Her får du dedikerede ressourcer, garanteret antal møder og prioriteret support.'
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
-      service: 'Database Opbygning',
-      price: 'Fra 50 kr. pr. kontakt',
-      description: 'Research og opbygning af kvalificerede kontaktdatabaser'
+      question: 'Hvilke brancher har I erfaring med mødebooking til?',
+      answer: 'Vi har særlig stor erfaring med B2B-mødebooking inden for: SaaS og tech-løsninger, IT-konsulentvirksomheder, forretningsudvikling, markedsføring & kommunikation, digitale bureauer, økonomi & revision, HR & rekruttering, transport & logistik, energiløsninger (LED, strøm, solenergi), facility services (kaffe, måtter), pensionsrådgivning og inkasso. Vores mødebookere er trænet i at kommunikere komplekse budskaber.'
+    },
+    {
+      question: 'Hvor hurtigt kan I levere de første møder?',
+      answer: 'Efter en grundig gennemgang af jeres virksomhed, produkter og målgruppe kan vi typisk starte aktiv mødebooking inden for 1-2 uger. De første kvalificerede møder leveres normalt inden for uge 2-3. Vi prioriterer kvalitet i forarbejdet (strategi, scripts, lead-kvalificering), da det sikrer markant bedre møderesultater på lang sigt.'
+    },
+    {
+      question: 'Hvordan sikrer I høj kvalitet i de bookede møder?',
+      answer: 'Vi sikrer mødekvalitet gennem: 1) Grundig research af din målgruppe og udvikling af skræddersyede scripts, 2) Træning af mødebookere i dine værdier og løsninger, 3) Præcis kvalificering af hvert lead inden booking (BANT-framework), 4) Mødebekræftelse via email og SMS før mødet, 5) Løbende tracking og optimering baseret på feedback fra jeres sælgere.'
+    },
+    {
+      question: 'Kan I booke møder i hele Danmark?',
+      answer: 'Ja, vi booker professionelle salgsmøder i hele Danmark - fra København til Aalborg, Aarhus til Esbjerg og alle steder imellem. Vi håndterer fysiske møder på kundens lokation, møder hos jer, samt videomøder og telefonmøder. Videomøder giver endnu større geografisk fleksibilitet og er ofte foretrukket af beslutningstagere.'
+    },
+    {
+      question: 'Hvad er inkluderet i prisen på mødebooking?',
+      answer: 'Uanset model får du: Erfarne mødebookere med gennemsnitligt 5+ års B2B-erfaring, skræddersyede salgsscripts optimeret til din målgruppe, CRM-integration og detaljeret rapportering, kvalificering af leads og beslutningstagere, mødebekræftelse og reminder før hvert møde, løbende optimering baseret på data, samt dedikeret account manager. Ingen skjulte omkostninger.'
+    },
+    {
+      question: 'Leverer I også emnelister til mødebooking?',
+      answer: 'Ja, vi leverer gerne GDPR-compliant emnelister uden beregning som en del af vores forarbejde. Vi research og kvalitetssikrer alle leads inden opstart af kampagnen, så I kan være sikre på at vi kun kontakter relevante beslutningstagere. Vi kan også arbejde med jeres eksisterende kundelister eller CRM-data.'
+    },
+    {
+      question: 'Hvorfor vælge Nexus Marketing frem for andre mødebooking-firmaer?',
+      answer: 'Vi adskiller os ved: 1) Ægte No Cure No Pay uden skjulte gebyrer, 2) Gennemsnitligt 15-20 kvalificerede møder per 100 opkald (over branchegennemsnit), 3) Erfarne mødebookere med minimum 5+ års B2B-erfaring, 4) Fuld transparens med detaljeret rapportering efter hver kampagne, 5) Fleksible modeller (No Cure No Pay eller pakke) tilpasset dine behov. Vi fokuserer på kvalitet frem for kvantitet - altid.'
     }
   ];
 
-  const valuePropositions = [
+  const benefits = [
     {
-      icon: <Euro className="w-12 h-12 text-green-600" />,
+      icon: Shield,
+      title: 'Nul Risiko med No Cure No Pay',
+      description: 'Betal kun for møder der rent faktisk gennemføres med kvalificerede beslutningstagere. Ingen forudgående investeringer eller månedlige faste omkostninger.'
+    },
+    {
+      icon: Euro,
       title: 'Transparent Prissætning',
-      description: 'Ingen skjulte omkostninger. Du ved præcis hvad du betaler for, og vi leverer altid det aftalte.'
+      description: 'Fast pris pr. møde aftalt på forhånd. Ingen skjulte gebyrer, opsætningsomkostninger eller overraskelser på fakturaen.'
     },
     {
-      icon: <Award className="w-12 h-12 text-orange-600" />,
-      title: 'No Cure No Pay Model',
-      description: 'Med vores pay-per-meeting model betaler I kun for konkrete resultater. Ingen risiko for jer.'
+      icon: TrendingUp,
+      title: 'Dokumenteret Succesrate',
+      description: 'Gennemsnitligt 15-20 kvalificerede salgsmøder per 100 opkald. Vores erfarne mødebookere leverer konsistente resultater.'
     },
     {
-      icon: <Shield className="w-12 h-12 text-purple-600" />,
-      title: 'Resultatgaranti',
-      description: 'Vi står bag vores arbejde. Hvis ikke vi leverer de aftalte resultater, justerer vi tilgangen.'
+      icon: Clock,
+      title: 'Hurtig Opstart',
+      description: 'Vi kan starte mødebooking inden for 1-2 uger. De første kvalificerede møder leveres typisk i uge 2-3.'
     }
   ];
 
-  const costComparison = [
-    {
-      scenario: 'Intern mødebooker (fuldtid)',
-      monthlyCost: '45.000-55.000 kr.',
-      includes: 'Løn, pension, ferie, sygedage, uddannelse, kontor',
-      efficiency: 'Variabel - afhænger af erfaring og motivation'
-    },
-    {
-      scenario: 'Nexus Marketing Pay-Per-Meeting',
-      monthlyCost: 'Kun betaling for resultater',
-      includes: 'Erfarne specialister, CRM, rapportering, ingen faste omkostninger',
-      efficiency: 'Høj - kun betaling for succesfuldt bookede møder'
-    }
-  ];
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
 
   return (
     <>
-      <SEO 
-        title="Priser på Mødebooking & Telemarketing | Nexus Marketing"
-        description="Se vores transparente priser på professionel mødebooking og telemarketing. Pay-per-meeting model uden risiko. Fleksible pakker fra 15.000 kr./md eller fast pris pr. møde."
+      <SEO
+        title="Tilbud på Mødebooking | Mødebooking Priser 2026 | Nexus Marketing"
+        description="Få tilbud på professionel mødebooking. No Cure No Pay eller pakkeløsning. 15-20 møder per 100 opkald. Erfarne mødebooking firma i hele Danmark. Se priser og få uforpligtende tilbud."
         canonical="/priser"
-        keywords="mødebooking priser, telemarketing omkostninger, B2B salg priser, outsourcing salg, leadgenerering priser, no cure no pay, pay per meeting"
+        keywords="tilbud på mødebooking, mødebooking priser, mødebooking firma, pris på mødebooking, telemarketing priser, B2B mødebooking, no cure no pay, professionel mødebooking"
       />
 
       <HeroSection
-        title="Transparente Priser på Professionel Mødebooking"
-        subtitle="Vælg mellem faste månedlige pakker eller vores risikofrie pay-per-meeting model. Få mere værdi end en intern medarbejder til konkurrencedygtige priser."
-        ctaText="Se vores pakker"
-        ctaLink="#pricing-packages"
-        secondaryCtaText="Få skræddersyet tilbud"
-        secondaryCtaLink="#contact-form"
+        title="Tilbud på Professionel Mødebooking - No Cure No Pay"
+        subtitle="Vælg mellem No Cure No Pay (betal kun for møder) eller vores omkostningseffektive pakkeløsning. Transparente priser, erfarne mødebookere, dokumenterede resultater."
+        ctaText="Få uforpligtende tilbud"
+        ctaLink="#contact-form"
+        secondaryCtaText="Ring 57 77 26 11"
+        secondaryCtaLink="tel:+4557772611"
         backgroundImage="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
-      {/* Value Propositions */}
+      {/* Benefits */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Nexus Marketing?</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Vi leverer professionel mødebooking og telemarketing med fleksible prismodeller, der passer til jeres behov og budget.
-            </p>
-          </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">Hvorfor vælge Nexus Marketing som dit mødebooking-firma?</h2>
+              <p className="text-xl text-gray-600">Professionel mødebooking med fleksible betalingsmodeller og dokumenterede resultater</p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {valuePropositions.map((prop, index) => (
-              <div key={index} className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="flex justify-center mb-4">{prop.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{prop.title}</h3>
-                <p className="text-gray-600">{prop.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Cost Comparison */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Sammenligning: Intern vs. Outsourcing</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Se hvordan vores pay-per-meeting model eliminerer risiko og giver jer fuld kontrol over jeres investering.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {costComparison.map((option, index) => (
-                <div key={index} className={`bg-white rounded-lg p-8 shadow-lg ${index === 1 ? 'border-2 border-green-500' : ''}`}>
-                  {index === 1 && (
-                    <div className="bg-green-500 text-white px-4 py-2 rounded-md text-sm font-medium mb-4 inline-block">
-                      Risikofri løsning
-                    </div>
-                  )}
-                  <h3 className="text-xl font-bold mb-4">{option.scenario}</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-4">{option.monthlyCost}</div>
-                  <p className="text-gray-600 mb-4">{option.includes}</p>
-                  <div className="border-t pt-4">
-                    <p className="text-sm text-gray-500">
-                      <strong>Effektivitet:</strong> {option.efficiency}
-                    </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                  <div className="text-blue-600 mb-4">
+                    <benefit.icon size={40} />
                   </div>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">{benefit.title}</h3>
+                  <p className="text-gray-600">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -202,219 +167,177 @@ const PricingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Pricing Packages */}
-      <section id="pricing-packages" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Vælg den prismodel der passer til jer</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Alle vores løsninger inkluderer erfarne mødebookere, CRM integration og detaljeret rapportering. 
-              Vælg mellem faste pakker eller vores risikofrie pay-per-meeting model.
-            </p>
-          </div>
+      {/* Pricing Models */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">Vælg din betalingsmodel for mødebooking</h2>
+              <p className="text-xl text-gray-600">Fleksible løsninger tilpasset din virksomheds behov og budget</p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {pricingPackages.map((pkg, index) => (
-              <div key={index} className={`bg-white rounded-lg shadow-lg p-8 relative ${pkg.popular ? 'border-2 border-green-500 transform scale-105' : 'border border-gray-200'}`}>
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium">
-                      {pkg.highlight || 'Mest populære'}
-                    </div>
-                  </div>
-                )}
-                
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{pkg.price}</div>
-                  <p className="text-gray-600">{pkg.description}</p>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start">
-                      <CheckCircle className="text-green-500 mr-3 mt-1 flex-shrink-0" size={16} />
-                      <span className="text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Link 
-                  to="#contact-form" 
-                  className={`w-full text-center py-3 px-6 rounded-md font-medium transition-colors block ${
-                    pkg.popular 
-                      ? 'bg-green-600 text-white hover:bg-green-700' 
-                      : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {pricingModels.map((model, index) => (
+                <div
+                  key={index}
+                  className={`bg-white rounded-lg shadow-xl p-8 ${
+                    model.highlight ? 'border-4 border-blue-600 relative transform scale-105' : 'border border-gray-200'
                   }`}
                 >
-                  {pkg.ctaText}
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+                  {model.highlight && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                        Mest populære
+                      </span>
+                    </div>
+                  )}
 
-      {/* Pay-Per-Meeting Detailed Section */}
-      <section className="py-16 bg-green-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Fast Pris pr. Mødeaftale – No Cure No Pay</h2>
-              <p className="text-lg text-gray-600">
-                Med vores pay-per-meeting model får I maksimal kontrol og minimal risiko
+                  <div className="text-center mb-6">
+                    <model.icon className="text-blue-600 mx-auto mb-4" size={48} />
+                    <h3 className="text-2xl font-bold mb-2 text-gray-900">{model.title}</h3>
+                    <p className="text-lg font-semibold text-blue-600 mb-2">{model.subtitle}</p>
+                    <p className="text-gray-600">{model.description}</p>
+                  </div>
+
+                  <ul className="space-y-3 mb-8">
+                    {model.features.map((feature, i) => (
+                      <li key={i} className="flex items-start">
+                        <CheckCircle className="text-green-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Link
+                    to="#contact-form"
+                    className={`w-full text-center py-4 px-6 rounded-lg font-semibold transition-colors block ${
+                      model.highlight
+                        ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg'
+                        : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                    }`}
+                  >
+                    Få tilbud på denne model
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
+              <p className="text-gray-800">
+                <strong>Usikker på hvilken model der passer bedst?</strong> Kontakt os for en uforpligtende rådgivning.
+                Vi hjælper dig med at vælge den mest omkostningseffektive løsning baseret på din branche, målgruppe og salgsbehov.
               </p>
             </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white rounded-lg p-8 shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-green-600">Præcis Budgetkontrol</h3>
-                <p className="text-gray-600 mb-4">
-                  Med en fast pris pr. mødeaftale kan I bestille det antal møder pr. uge eller måned, som I ønsker. 
-                  I kender prisen per salgsmøde på forhånd, og erfaringsmæssigt ved I sikkert, hvor mange møder 
-                  der typisk går på en ordre. Dette giver jer mulighed for at styre jeres salgsbudget meget præcist.
-                </p>
-                <p className="text-gray-600">
-                  Ingen månedlige faste omkostninger betyder, at I kun investerer når I har behov for møder, 
-                  hvilket er perfekt til sæsonbetonede virksomheder eller når I vil teste nye markeder.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-8 shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-blue-600">Skræddersyet Prissætning</h3>
-                <p className="text-gray-600 mb-4">
-                  Prisen for et salgsmøde varierer naturligvis fra opgave til opgave, afhængigt af jeres branche, 
-                  målgruppe og kompleksiteten af jeres produkter eller services. Faktorer som geografisk område, 
-                  beslutningstagerniveau og mødevarighed påvirker også prisen.
-                </p>
-                <p className="text-gray-600">
-                  Vi starter altid med at give jer et uforpligtende tilbud baseret på en grundig analyse af 
-                  jeres specifikke behov og målgruppe. På den måde sikrer vi, at prisen er fair og konkurrencedygtig.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4">Fordele ved Pay-Per-Meeting</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div>
-                  <div className="text-green-600 font-bold text-2xl mb-2">0 kr.</div>
-                  <p className="text-sm text-gray-600">Faste månedlige omkostninger</p>
-                </div>
-                <div>
-                  <div className="text-blue-600 font-bold text-2xl mb-2">100%</div>
-                  <p className="text-sm text-gray-600">Kontrol over jeres investering</p>
-                </div>
-                <div>
-                  <div className="text-purple-600 font-bold text-2xl mb-2">Fast</div>
-                  <p className="text-sm text-gray-600">Pris pr. møde aftalt på forhånd</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Services */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Tilkøb og specialiserede services</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Udover vores månedlige pakker og pay-per-meeting model tilbyder vi også specialiserede services.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {additionalServices.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md">
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-lg font-semibold mb-2">{service.service}</h3>
-                <div className="text-xl font-bold text-blue-600 mb-3">{service.price}</div>
-                <p className="text-gray-600 text-sm">{service.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* SEO Content Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Hvad koster professionel mødebooking og telemarketing?</h2>
-            
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Mødebooking priser og pakker 2026</h2>
+
             <div className="prose prose-lg max-w-none">
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Omkostningseffektiv Mødebooking</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Hvad koster professionel mødebooking?</h3>
                   <p className="text-gray-600 mb-4">
-                    Når virksomheder overvejer at outsource deres mødebooking og telemarketing, er prisen naturligvis 
-                    en vigtig faktor. Hos Nexus Marketing har vi udviklet transparente og konkurrencedygtige 
-                    prismodeller, der giver jer mere værdi end at ansætte internt.
+                    Når virksomheder søger efter tilbud på mødebooking, er prisen naturligvis en vigtig faktor.
+                    Hos Nexus Marketing tilbyder vi Danmarks mest transparente og fleksible prismodeller for mødebooking.
+                    Du kan vælge mellem No Cure No Pay (betal kun for resultater) eller vores omkostningseffektive pakkeløsninger.
                   </p>
                   <p className="text-gray-600">
-                    Vores pay-per-meeting model eliminerer al risiko for jer, da I kun betaler for konkrete resultater. 
-                    Dette er særligt attraktivt for virksomheder, der vil teste telemarketing uden store 
-                    forudgående investeringer eller har sæsonbetonede salgsbehov.
+                    Med No Cure No Pay betaler du typisk mellem 800-2.000 kr. pr. kvalificeret møde, afhængig af kompleksitet,
+                    målgruppe og branche. Pakkeløsninger starter fra ca. 15.000 kr./md og giver den laveste pris pr. møde.
                   </p>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Fleksible Prismodeller</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Hvorfor vælge No Cure No Pay?</h3>
                   <p className="text-gray-600 mb-4">
-                    Vi forstår, at forskellige virksomheder har forskellige behov og budgetter. Derfor tilbyder 
-                    vi både faste månedlige pakker og vores populære pay-per-meeting model. Med pay-per-meeting 
-                    får I præcis kontrol over jeres investering og kan skalere op eller ned efter behov.
+                    Vores No Cure No Pay model er den ultimative risikofrie løsning. Du betaler kun for møder, der rent faktisk
+                    gennemføres med kvalificerede beslutningstagere. Ingen opsætningsgebyrer, ingen månedlige faste omkostninger,
+                    ingen betaling for aflyste møder. Dette gør det perfekt til virksomheder, der vil teste mødebooking uden stor investering.
                   </p>
                   <p className="text-gray-600">
-                    Vores no cure no pay tilgang betyder, at vi kun får betaling, når vi leverer resultater. 
-                    Dette skaber en naturlig incitamentsstruktur, hvor vores succes er direkte forbundet med jeres succes.
+                    Som erfaren mødebooking-firma ved vi, at vores succes afhænger af jeres succes. Derfor er vores interesser
+                    fuldstændigt aligned med jeres - vi leverer kun værdi, når I får værdifulde møder.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-blue-50 rounded-lg p-8 mb-8">
-                <h3 className="text-xl font-semibold mb-4">Hvad er inkluderet i prisen?</h3>
-                <p className="text-gray-600 mb-4">
-                  Uanset om I vælger en fast månedlig pakke eller vores pay-per-meeting model, får I adgang til 
-                  erfarne specialister, der er trænet i jeres produkter og målgruppe, avanceret CRM integration, 
-                  detaljeret rapportering og løbende optimering af jeres kampagner.
-                </p>
-                <p className="text-gray-600">
-                  Med pay-per-meeting modellen inkluderer vi også grundig kvalificering af hver lead, 
-                  mødebekræftelse og opfølgning for at sikre den højest mulige mødegennemførelsesrate. 
-                  I betaler kun for møder, der rent faktisk bliver gennemført med kvalificerede beslutningstagere.
-                </p>
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 mb-8 border border-blue-100">
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">Sammenlign: Internt vs. Outsourcing af mødebooking</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Intern mødebooker (fuldtid)</h4>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Månedlig omkostning:</strong> 45.000-55.000 kr.</p>
+                    <p className="text-sm text-gray-600 mb-2">Inkluderer: Løn, pension, ferie, sygedage, uddannelse, kontor, software</p>
+                    <p className="text-sm text-gray-600">Risiko: Fuld investering uanset resultater</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border-2 border-blue-600">
+                    <h4 className="font-semibold text-gray-900 mb-2">Nexus Marketing No Cure No Pay</h4>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Månedlig omkostning:</strong> Kun betaling for møder</p>
+                    <p className="text-sm text-gray-600 mb-2">Inkluderer: Erfarne specialister, CRM, rapportering, optimering</p>
+                    <p className="text-sm text-green-600 font-semibold">Risiko: Nul - betal kun for resultater</p>
+                  </div>
+                </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">ROI og Værdi</h3>
-                  <p className="text-gray-600 mb-4">
-                    Med vores pay-per-meeting model er ROI beregningen meget enkel: I ved præcis, hvad hvert møde 
-                    koster, og kan sammenligne dette med jeres gennemsnitlige ordreværdi og konverteringsrate. 
-                    Dette giver jer fuldstændig transparens og kontrol over jeres salgsøkonomi.
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Hvad påvirker prisen på mødebooking?</h3>
+                  <p className="text-gray-600 mb-3">
+                    Prisen for professionel mødebooking varierer baseret på:
                   </p>
-                  <p className="text-gray-600">
-                    Vores kunder oplever typisk, at pay-per-meeting modellen giver dem bedre ROI end både interne 
-                    medarbejdere og traditionelle faste månedlige aftaler, fordi de kun betaler for konkrete, 
-                    målbare resultater.
-                  </p>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <CheckCircle className="text-blue-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span><strong>Målgruppe:</strong> C-level executives er typisk dyrere end middle management</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-blue-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span><strong>Branche:</strong> Tekniske B2B-løsninger kræver mere research end standardprodukter</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-blue-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span><strong>Geografi:</strong> Landsdækkende vs. regionalt fokus</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-blue-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span><strong>Mødetype:</strong> Fysisk møde, videomøde eller telefonmøde</span>
+                    </li>
+                  </ul>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Ingen Skjulte Omkostninger</h3>
-                  <p className="text-gray-600 mb-4">
-                    Med vores pay-per-meeting model er der ingen opsætningsgebyrer, månedlige faste omkostninger 
-                    eller skjulte tillæg. Den pris, vi aftaler pr. møde, er den pris, I betaler - punktum. 
-                    Dette giver jer fuldstændig budgetkontrol og forudsigelighed.
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Hvad er inkluderet i prisen?</h3>
+                  <p className="text-gray-600 mb-3">
+                    Uanset om du vælger No Cure No Pay eller pakkeløsning får du:
                   </p>
-                  <p className="text-gray-600">
-                    I kan starte helt uforpligtende og teste vores kvalitet uden store investeringer. 
-                    Hvis I er tilfredse med resultaterne, kan I gradvist øge antallet af møder eller 
-                    overgå til en fast månedlig pakke for endnu bedre priser.
-                  </p>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span>Erfarne mødebookere med 5+ års B2B-erfaring</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span>Skræddersyede salgsscripts optimeret til din målgruppe</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span>GDPR-compliant emnelister uden beregning</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span>Mødebekræftelse og reminder før hvert møde</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-600 mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span>Detaljeret rapportering og løbende optimering</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -422,27 +345,102 @@ const PricingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section id="contact-form" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Få et skræddersyet tilbud på mødebooking</h2>
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">Ofte stillede spørgsmål om mødebooking-priser</h2>
+              <p className="text-xl text-gray-600">Find svar på de mest almindelige spørgsmål om vores priser og services</p>
+            </div>
+
+            <div className="space-y-4">
+              {faqItems.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    <h3 className="text-lg font-semibold text-gray-900 pr-4">{item.question}</h3>
+                    {openFaqIndex === index ? (
+                      <ChevronUp className="text-blue-600 flex-shrink-0" size={24} />
+                    ) : (
+                      <ChevronDown className="text-gray-400 flex-shrink-0" size={24} />
+                    )}
+                  </button>
+                  {openFaqIndex === index && (
+                    <div className="px-6 pb-5">
+                      <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-gray-600 mb-4">Har du flere spørgsmål om vores mødebooking-priser?</p>
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+              >
+                Kontakt os for rådgivning
+                <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Klar til at få flere kvalificerede salgsmøder?</h2>
+            <p className="text-xl text-blue-100 mb-8">
+              Uanset om du vælger No Cure No Pay eller pakkeløsning, får du Danmarks mest erfarne mødebookere
+              til at generere kvalificerede møder for din virksomhed. Start risikofrit i dag.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="#contact-form"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+              >
+                Få uforpligtende tilbud
+                <ArrowRight className="ml-2" size={20} />
+              </Link>
+              <a
+                href="tel:+4557772611"
+                className="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors border-2 border-white"
+              >
+                <Phone className="mr-2" size={20} />
+                Ring 57 77 26 11
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section id="contact-form" className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">Få dit personlige tilbud på mødebooking</h2>
               <p className="text-lg text-gray-600">
-                Udfyld formularen nedenfor, så sender vi jer et detaljeret tilbud inden for 24 timer. 
-                Vælg mellem faste pakker eller vores risikofrie pay-per-meeting model.
+                Udfyld formularen, så sender vi dig et detaljeret tilbud inden for 24 timer.
+                Vælg mellem No Cure No Pay eller vores omkostningseffektive pakkeløsning.
               </p>
             </div>
-            
-            <div className="bg-white rounded-lg p-8 shadow-lg">
-              <iframe 
-                data-tally-src="https://tally.so/embed/w4DglO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-                loading="lazy" 
-                width="100%" 
-                height="600" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0" 
+
+            <div className="bg-gray-50 rounded-lg p-8 shadow-lg">
+              <iframe
+                data-tally-src="https://tally.so/embed/w4DglO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
                 title="Få tilbud på mødebooking - Nexus Marketing"
               ></iframe>
             </div>
