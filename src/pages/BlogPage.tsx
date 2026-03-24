@@ -26,6 +26,56 @@ const BlogPage: React.FC = () => {
 
   const blogPosts: BlogPost[] = [
     {
+      id: '13',
+      slug: 'saas-loesninger-2026',
+      title: 'SaaS-løsninger i 2026: Tendenser og muligheder for moderne virksomheder',
+      excerpt: 'Udforsk de nyeste tendenser inden for SaaS-løsninger i 2026. Fra AI-integration til sikkerhed og skalerbarhed - få indsigt i, hvad der driver SaaS-industrien fremad.',
+      category: 'teknologi',
+      date: '15. januar 2026',
+      author: 'Nexus Marketing',
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
+    },
+    {
+      id: '14',
+      slug: 'ai-automation-2026',
+      title: 'AI-automation i 2026: Sådan effektiviserer du din virksomhed',
+      excerpt: 'Lær hvordan AI-automation transformerer danske virksomheder i 2026. Konkrete eksempler, ROI-beregninger og best practices for implementering af AI-drevet automatisering.',
+      category: 'teknologi',
+      date: '22. januar 2026',
+      author: 'Nexus Marketing',
+      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg'
+    },
+    {
+      id: '15',
+      slug: 'modebooking-2026',
+      title: 'Mødebooking i 2026: Sådan booker du flere kvalificerede B2B-møder',
+      excerpt: 'Opdateret guide til professionel mødebooking i 2026. Lær de nyeste teknikker, værktøjer og strategier der sikrer flere kvalificerede B2B-møder.',
+      category: 'mødebooking',
+      date: '18. januar 2026',
+      author: 'Nexus Marketing',
+      image: 'https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg'
+    },
+    {
+      id: '16',
+      slug: 'telesalg-2026',
+      title: 'Telesalg i 2026: Strategier der konverterer i en digital tidsalder',
+      excerpt: 'Komplet guide til effektivt telesalg i 2026. Lær de nyeste teknikker, værktøjer og strategier. Fra compliance til konvertering - alt du behøver at vide.',
+      category: 'telemarketing',
+      date: '25. januar 2026',
+      author: 'Nexus Marketing',
+      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg'
+    },
+    {
+      id: '17',
+      slug: 'outbound-sales-2026',
+      title: 'Outbound Sales i 2026: Sådan bygger du en skalerbar salgsmotor',
+      excerpt: 'Komplet guide til moderne outbound sales i 2026. Lær hvordan du bygger en effektiv outbound-motor med AI, multi-channel tilgange og dokumenterede best practices.',
+      category: 'salg',
+      date: '28. januar 2026',
+      author: 'Nexus Marketing',
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg'
+    },
+    {
       id: '1',
       slug: 'effektive-telemarketing-strategier-2025',
       title: 'Effektive telemarketing-strategier for B2B virksomheder i 2025',
@@ -159,6 +209,7 @@ const BlogPage: React.FC = () => {
   // Categories for filter
   const categories = [
     { id: 'all', name: 'Alle' },
+    { id: 'teknologi', name: 'Teknologi' },
     { id: 'telemarketing', name: 'Telemarketing' },
     { id: 'mødebooking', name: 'Mødebooking' },
     { id: 'salg', name: 'Salg' },

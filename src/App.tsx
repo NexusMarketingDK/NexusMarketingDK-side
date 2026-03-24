@@ -13,6 +13,13 @@ import BlogPost from './pages/BlogPost';
 import Layout from './components/Layout';
 import ContactSubmissions from './pages/admin/ContactSubmissions';
 
+// Blog Posts
+import SaaSLoesninger2026 from './pages/blog/SaaSLoesninger2026';
+import AIAutomation2026 from './pages/blog/AIAutomation2026';
+import Modebooking2026 from './pages/blog/Modebooking2026';
+import Telesalg2026 from './pages/blog/Telesalg2026';
+import OutboundSales2026 from './pages/blog/OutboundSales2026';
+
 // Job Landing Pages
 import RemoteWorkPage from './pages/jobs/RemoteWorkPage';
 import WebBureauPage from './pages/jobs/WebBureauPage';
@@ -74,6 +81,13 @@ function App() {
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+
+          {/* New Blog Posts 2026 */}
+          <Route path="/blog/saas-loesninger-2026" element={<SaaSLoesninger2026 />} />
+          <Route path="/blog/ai-automation-2026" element={<AIAutomation2026 />} />
+          <Route path="/blog/modebooking-2026" element={<Modebooking2026 />} />
+          <Route path="/blog/telesalg-2026" element={<Telesalg2026 />} />
+          <Route path="/blog/outbound-sales-2026" element={<OutboundSales2026 />} />
           
           {/* Admin Routes */}
           <Route path="/admin/contact-submissions" element={<ContactSubmissions />} />
