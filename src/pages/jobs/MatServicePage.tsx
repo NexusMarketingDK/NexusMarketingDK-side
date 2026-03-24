@@ -63,17 +63,17 @@ const MatServicePage: React.FC = () => {
 
   const productFeatures = [
     {
-      image: 'https://images.pexels.com/photos/6466236/pexels-photo-6466236.jpeg',
+      image: 'https://images.pexels.com/photos/6466236/pexels-photo-6466236.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2&fit=crop',
       title: 'Professionelle indgangsmåtter',
       description: 'Skræddersyede løsninger der holder indgangspartier rene og sikre'
     },
     {
-      image: 'https://images.pexels.com/photos/6466267/pexels-photo-6466267.jpeg',
+      image: 'https://images.pexels.com/photos/6466267/pexels-photo-6466267.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2&fit=crop',
       title: 'Specialdesignede løsninger',
       description: 'Måtter tilpasset forskellige miljøer og behov'
     },
     {
-      image: 'https://images.pexels.com/photos/6466241/pexels-photo-6466241.jpeg',
+      image: 'https://images.pexels.com/photos/6466241/pexels-photo-6466241.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2&fit=crop',
       title: 'Komplet servicekoncept',
       description: 'Regelmæssig udskiftning og professionel vask'
     }
@@ -112,10 +112,11 @@ const MatServicePage: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {productFeatures.map((feature, index) => (
                 <div key={index} className="relative overflow-hidden rounded-lg shadow-lg">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
+                  <img
+                    src={feature.image}
+                    alt={`${feature.title} - Nexus Marketing måtteservice`}
                     className="w-full h-48 object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <h3 className="text-white font-medium mb-1">{feature.title}</h3>
