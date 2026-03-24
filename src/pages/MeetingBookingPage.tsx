@@ -106,20 +106,31 @@ const MeetingBookingPage: React.FC = () => {
       <div className="min-h-screen">
         <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Få pris på mødebooking – sammenlign priser
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-blue-100">
-                Professionel mødebooking der genererer kvalificerede salgsmøder. No Cure No Pay eller fast pakkeløsning.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/kontakt" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors">
-                  Få et uforpligtende pris på mødebooking der passer til dit behov <ArrowRight className="ml-2" size={20} />
-                </Link>
-                <a href="tel:+4557772611" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors border-2 border-white">
-                  <Phone className="mr-2" size={20} /> Ring 57 77 26 11
-                </a>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                    Vi håndterer din mødebooking – Få pris på mødebooking
+                  </h1>
+                  <p className="text-xl md:text-2xl mb-8 text-blue-100">
+                    Professionel mødebooking der genererer kvalificerede salgsmøder. No Cure No Pay eller fast pakkeløsning.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link to="/kontakt" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors">
+                      Få et uforpligtende pris på mødebooking der passer til dit behov <ArrowRight className="ml-2" size={20} />
+                    </Link>
+                    <a href="tel:+4557772611" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors border-2 border-white">
+                      <Phone className="mr-2" size={20} /> Ring 57 77 26 11
+                    </a>
+                  </div>
+                </div>
+                <div className="hidden lg:block">
+                  <img
+                    src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Professionel mødebooking med kvalificerede salgsmøder"
+                    className="rounded-lg shadow-2xl"
+                  />
+                </div>
               </div>
             </div>
           </div>
