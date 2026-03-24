@@ -232,6 +232,153 @@ const WebsitesPage: React.FC = () => {
                 </Link>
               </div>
             </div>
+
+            {/* SEO Content Section */}
+            <div className="mt-16 bg-white rounded-lg p-8 md:p-12 shadow-sm">
+              <h2 className="text-3xl font-bold mb-8 text-gray-900">Professionel Hjemmeside - Din Digitale Forretning</h2>
+
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 mb-6">
+                  En professionel hjemmeside er ikke længere en luksus - det er en nødvendighed for enhver moderne virksomhed.
+                  Din hjemmeside er ofte det første møde potentielle kunder har med din virksomhed, og den spiller en afgørende
+                  rolle i deres beslutning om at vælge dig frem for konkurrenterne.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Hvorfor Er En Hjemmeside Vigtig For Din Virksomhed?</h3>
+                <p className="text-gray-700 mb-6">
+                  I dagens digitale verden søger over 90% af forbrugerne information online før de træffer en købsbeslutning.
+                  Uden en professionel hjemmeside mister du potentielle kunder til konkurrenter der er synlige online. En
+                  hjemmeside giver din virksomhed troværdighed, øger din synlighed og fungerer som en 24/7 sælger der arbejder
+                  for dig hele døgnet.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Hvad Koster Det At Få Lavet En Hjemmeside?</h3>
+                <p className="text-gray-700 mb-6">
+                  Prisen på en hjemmeside varierer afhængigt af kompleksitet og funktionalitet. Hos Nexus Marketing tilbyder
+                  vi både prisvenlige basis hjemmesider der fungerer som online visitkort, samt avancerede løsninger med
+                  skræddersyet design og omfattende funktionalitet. En basis hjemmeside med SEO optimering kan du få til en
+                  konkurrencedygtig pris, mens mere avancerede løsninger naturligvis kræver en større investering. Kontakt os
+                  for en præcis prisberegning baseret på dine specifikke behov.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">SEO - Gør Din Hjemmeside Synlig På Google</h3>
+                <p className="text-gray-700 mb-6">
+                  En smuk hjemmeside er værdiløs hvis ingen kan finde den. Derfor er SEO (søgemaskineoptimering) en
+                  integreret del af alle vores hjemmesider. Vi sikrer at din hjemmeside er teknisk optimeret, har relevant
+                  indhold med de rigtige søgeord, og opfylder Googles krav til hastighed og mobilvenlighed. Dette betyder
+                  at din virksomhed bliver fundet af potentielle kunder når de søger efter dine produkter eller tjenester.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Responsivt Design - Perfekt På Alle Enheder</h3>
+                <p className="text-gray-700 mb-6">
+                  Med over 70% af internettrafikken kommer fra mobile enheder, er responsivt design ikke længere
+                  valgfrit. Alle vores hjemmesider er designet med en "mobile-first" tilgang, hvilket betyder at de ser
+                  fantastiske ud og fungerer perfekt på smartphones, tablets og desktop computere. Dette sikrer den bedste
+                  brugeroplevelse uanset hvordan dine kunder tilgår din hjemmeside.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Webshop Med WooCommerce</h3>
+                <p className="text-gray-700 mb-6">
+                  Ønsker du at sælge dine produkter online? Vi specialiserer os i at udvikle webshops powered af
+                  WooCommerce - verdens mest populære e-handelsplatform. Vi håndterer alt fra produktopsætning og
+                  betalingsintegration til forsendelsesløsninger og lagerstyring. Din webshop bliver en komplet
+                  salgsplatform der arbejder for dig døgnet rundt.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ Section */}
+            <div className="mt-16 bg-gray-50 rounded-lg p-8 md:p-12">
+              <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Ofte Stillede Spørgsmål Om Hjemmesider</h2>
+
+              <div className="space-y-6 max-w-4xl mx-auto">
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Hvor lang tid tager det at få lavet en hjemmeside?</h3>
+                  <p className="text-gray-700">
+                    En basis hjemmeside kan typisk leveres inden for 2-3 uger, mens mere komplekse løsninger med
+                    skræddersyet design og avanceret funktionalitet kan tage 4-8 uger. Tidsrammen afhænger af projektets
+                    omfang, hvor hurtigt indhold leveres, og hvor mange revideringer der er behov for.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Kan jeg selv opdatere indhold på hjemmesiden?</h3>
+                  <p className="text-gray-700">
+                    Ja, alle vores hjemmesider kommer med et brugervenligt CMS (Content Management System) der gør det
+                    nemt for dig at opdatere tekst, billeder og andre elementer uden teknisk viden. Vi giver også grundig
+                    træning i hvordan du bruger systemet, og vores support er altid tilgængelig hvis du har brug for hjælp.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Hvad er inkluderet i SEO optimeringen?</h3>
+                  <p className="text-gray-700">
+                    Vores SEO optimering omfatter teknisk optimering (hastighed, mobilvenlig, SSL), on-page SEO
+                    (meta-tags, overskrifter, alt-tekster), søgeordsanalyse og integration, struktureret data markup,
+                    og grundlæggende off-page optimering. For professionelle pakker tilbyder vi også omfattende
+                    konkurrentanalyse og indholdsstrategier.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Får jeg ejerskab til hjemmesiden?</h3>
+                  <p className="text-gray-700">
+                    Ja, du får fuld ejerskab til både design og indhold på din hjemmeside. Vi leverer alle nødvendige
+                    login oplysninger og filer, så du har komplet kontrol. Du kan vælge at fortsætte med vores
+                    supportpakker for vedligeholdelse og opdateringer, eller administrere hjemmesiden selv.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Hvad hvis jeg har brug for ændringer efter lancering?</h3>
+                  <p className="text-gray-700">
+                    Vi tilbyder forskellige supportpakker der dækker alt fra mindre justeringer til større opdateringer
+                    og nye funktioner. Mindre rettelser i den første måned efter lancering er normalt inkluderet. For
+                    større ændringer kan vi lave en individuel aftale baseret på omfanget af arbejdet.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Kan I integrere med mine eksisterende systemer?</h3>
+                  <p className="text-gray-700">
+                    Ja, vi har erfaring med at integrere hjemmesider med en bred vifte af systemer som CRM,
+                    betalingsløsninger, e-mail marketing platforme, booking systemer og meget mere. Vi analyserer dine
+                    behov og finder de bedste integrationsløsninger for netop din virksomhed.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Er der løbende omkostninger til en hjemmeside?</h3>
+                  <p className="text-gray-700">
+                    Ja, udover den initiale udviklingspris er der typisk årlige omkostninger til domæne (webadresse),
+                    hosting (serverplads) og SSL-certifikat. Disse omkostninger er relativt små - normalt mellem
+                    500-2000 kr. årligt afhængigt af dine behov. Valgfrie tilkøb kan være support, vedligeholdelse og
+                    løbende SEO optimering.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Hvordan starter jeg projektet?</h3>
+                  <p className="text-gray-700">
+                    Det er nemt at komme i gang! Kontakt os via vores kontaktformular eller ring til os direkte. Vi
+                    holder et uforpligtende møde hvor vi diskuterer dine behov, målsætninger og budget. Derefter laver
+                    vi et skræddersyet tilbud og projektplan. Når du godkender, går vi i gang med at skabe din nye
+                    professionelle hjemmeside.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Final CTA */}
+            <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-8 md:p-12 text-white">
+              <h2 className="text-3xl font-bold mb-4">Klar Til At Komme I Gang?</h2>
+              <p className="text-xl mb-8 text-blue-50">
+                Lad os skabe en professionel hjemmeside der tager din virksomhed til næste niveau
+              </p>
+              <Link to="/kontakt" className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors">
+                Få et uforpligtende tilbud <ArrowRight size={24} className="ml-2" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
