@@ -40,6 +40,9 @@ import AiIntegrationPage from './pages/digital/AiIntegrationPage';
 // Meeting Booking Page
 import MeetingBookingPage from './pages/MeetingBookingPage';
 
+// Lead Generation Page
+import LeadGenerationPage from './pages/LeadGenerationPage';
+
 function App() {
   const redirects = [
     {from: '/forside', to: '/'},
@@ -111,6 +114,9 @@ function App() {
 
           {/* Meeting Booking Page */}
           <Route path="/modebooking" element={<MeetingBookingPage />} />
+
+          {/* Lead Generation Page */}
+          <Route path="/leadgenerering" element={<LeadGenerationPage />} />
         </Route>
       </Routes>
     </Router>

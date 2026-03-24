@@ -57,7 +57,8 @@ const Navbar: React.FC = () => {
     { path: '/samarbejdspartner', title: 'Bliv samarbejdspartner' },
     { path: '/priser', title: 'Priser & Pakker' },
     { path: '/hvorfor-nexusmarketing', title: 'Hvorfor Nexus Marketing?' },
-    { path: '/modebooking', title: 'Mødebooking' }
+    { path: '/modebooking', title: 'Mødebooking' },
+    { path: '/leadgenerering', title: 'Leadgenerering' }
   ];
   
   return (

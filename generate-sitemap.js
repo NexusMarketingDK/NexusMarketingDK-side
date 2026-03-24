@@ -141,6 +141,20 @@ const pages = [
     lastmod: new Date('2023-07-05').toISOString()
   },
   
+  // Partner/Samarbejde pages
+  {
+    path: '/modebooking',
+    priority: '0.9',
+    changefreq: 'weekly',
+    lastmod: currentDate
+  },
+  {
+    path: '/leadgenerering',
+    priority: '0.9',
+    changefreq: 'weekly',
+    lastmod: currentDate
+  },
+
   // Digital Services
   {
     path: '/digital/webudvikling',
