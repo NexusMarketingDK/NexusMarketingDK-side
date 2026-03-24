@@ -74,7 +74,7 @@ const PensionPage: React.FC = () => {
         subtitle="Præsenter moderne pensionsløsninger: AI robo-advisors, ESG-optimerede porteføljer, crypto-pension integration og personaliseret longevity-planning baseret på genetisk data."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg"
+        backgroundImage="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

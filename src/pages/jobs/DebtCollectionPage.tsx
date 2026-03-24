@@ -74,7 +74,7 @@ const DebtCollectionPage: React.FC = () => {
         subtitle="Præsenter cutting-edge inkassoteknologi: AI-baseret credit scoring, blockchain-verificerede fordringer, automated payment plans og empati-drevet digital kommunikation."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/5688887/pexels-photo-5688887.jpeg"
+        backgroundImage="https://images.pexels.com/photos/5688887/pexels-photo-5688887.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

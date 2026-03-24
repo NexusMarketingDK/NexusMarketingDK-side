@@ -69,7 +69,7 @@ const SolarEnergyPage: React.FC = () => {
         subtitle="Præsenter cutting-edge solteknologi: Perovskite-silicium tandem celler med 35% effektivitet, bi-facial panels og AI-optimeret batterilagring. Fremtidens solenergi er her."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

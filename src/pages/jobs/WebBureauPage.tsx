@@ -81,7 +81,7 @@ const WebBureauPage: React.FC = () => {
         subtitle="Bliv mødebooker for fremtidens web-løsninger. Vi søger ambitiøse talenter til at præsentere AI-genererede hjemmesider, avanceret SEO-automation og web3-integration til danske virksomheder."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

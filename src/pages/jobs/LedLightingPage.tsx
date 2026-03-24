@@ -99,7 +99,7 @@ const LedLightingPage: React.FC = () => {
         subtitle="Bliv mødebooker for fremtidens intelligente belysning. Præsenter AI-styrede systemer, IoT-integration, Human Centric Lighting og Li-Fi dataoverførsel til danske virksomheder."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

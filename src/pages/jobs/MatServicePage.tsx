@@ -93,7 +93,7 @@ const MatServicePage: React.FC = () => {
         subtitle="Præsenter næste generation facility management: IoT-aktiverede måtter med sensor-teknologi, AI predictive maintenance, selv-rensende nano-coatings og real-time hygiejne-monitoring."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/6466236/pexels-photo-6466236.jpeg"
+        backgroundImage="https://images.pexels.com/photos/6466236/pexels-photo-6466236.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

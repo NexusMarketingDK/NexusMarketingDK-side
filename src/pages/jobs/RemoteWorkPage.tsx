@@ -61,13 +61,13 @@ const RemoteWorkPage: React.FC = () => {
       quote: "AI-værktøjerne fra Nexus Marketing har revolutioneret mit arbejde. Jeg kan nu identificere de bedste leads 3x hurtigere og mine mødebooking-rater er steget med 40%. Remote-kulturen giver mig perfekt work-life balance.",
       name: "Maria Hansen",
       title: "AI-Assisteret Mødebooker",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
+      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2&fit=crop"
     },
     {
       quote: "Som studerende i 2026 er det fantastisk at arbejde remote med moderne AI-værktøjer. Jeg tjener mere end mine venner i traditionelle jobs, og jeg lærer cutting-edge teknologi der kommer til nytte i min fremtidige karriere.",
       name: "Peter Nielsen",
       title: "Remote Telesælger",
-      image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+      image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2&fit=crop"
     }
   ];
 
@@ -106,7 +106,7 @@ const RemoteWorkPage: React.FC = () => {
         subtitle="Få frihed til at arbejde hvor og hvornår du vil med de nyeste AI-værktøjer. Vi tilbyder moderne teknologi, attraktiv løn og professionel support til dig, der ønsker et fremtidssikret remote job med mødebooking og telesalg."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/4064840/pexels-photo-4064840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/4064840/pexels-photo-4064840.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

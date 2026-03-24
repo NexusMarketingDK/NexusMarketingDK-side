@@ -66,7 +66,7 @@ const EnergySalesPage: React.FC = () => {
         subtitle="Sælg fremtidens energiløsninger: AI-optimerede systemer, V2G (Vehicle-to-Grid), hjemmebatterier og virtuelle kraftværker. Hjælp familier med at blive energi-selvforsynende."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">

@@ -69,7 +69,7 @@ const CoffeeServicePage: React.FC = () => {
         subtitle="Præsenter AI-styrede kaffeautomater med personalisering, IoT-monitoring, bæredygtig specialty coffee og predictive maintenance. Kaffeoplevelsen møder cutting-edge teknologi."
         ctaText="Ansøg nu"
         ctaLink="#apply"
-        backgroundImage="https://images.pexels.com/photos/4820714/pexels-photo-4820714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/4820714/pexels-photo-4820714.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2&fit=crop"
       />
 
       <section className="py-16 bg-white">
