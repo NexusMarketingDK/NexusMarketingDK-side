@@ -125,104 +125,6 @@ const MeetingBookingPage: React.FC = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4 text-gray-900">Fordele ved professionel mødebooking</h2>
-                <p className="text-xl text-gray-600">Hvorfor virksomheder vælger ekstern mødebooking</p>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div className="text-blue-600 mb-4">
-                      <benefit.icon size={40} />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900">{benefit.title}</h3>
-                    <p className="text-gray-600">{benefit.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Hvad er professionel mødebooking?</h2>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Mødebooking er en effektiv marketingstrategi, hvor erfarne specialister kontakter potentielle kunder på vegne af din virksomhed for at booke kvalificerede salgsmøder. I en verden præget af digital markedsføring forbliver direkte, personlig kontakt en af de mest pålidelige veje til nye kunder - især i B2B-segmentet.
-                </p>
-
-                <h3 className="text-2xl font-bold mb-4 mt-8 text-gray-900">Hvorfor investere i mødebooking?</h3>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Selvom SEO, sociale medier og andre online marketingaktiviteter er afgørende i dagens forretningsverden, skal du stadig have direkte dialog med dine potentielle kunder. Cold calling og mødebooking giver dokumenterbare resultater: Ring til 100 kvalificerede kundeemner, og du kan typisk forvente 15-20 konkrete salgsmøder på kort sigt plus en pipeline af leads til fremtidig opfølgning.
-                </p>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Udfordringen er, at mødebooking er tidskrævende og kræver dedikeret fokus. I en travl hverdag kan det være svært at opretholde konsistent mødebooking samtidig med, at du driver forretning. Det er her, professionelle mødebooking-partnere kommer ind i billedet.
-                </p>
-
-                <h3 className="text-2xl font-bold mb-4 mt-8 text-gray-900">Dokumenteret effekt i en digital tidsalder</h3>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Mange virksomheder overser værdien af direkte kundekontakt i jagten på digitale løsninger. Men her er realiteten: Dine konkurrenter, der aktivt arbejder med mødebooking, skaber løbende nye forretningsmuligheder, mens andre venter på, at hjemmesiden eller LinkedIn genererer leads. Effektiv mødebooking giver dig en konkurrencefordel, fordi mange vælger det fra - de synes, det er for krævende eller ressourcetungt.
-                </p>
-
-                <h3 className="text-2xl font-bold mb-4 mt-8 text-gray-900">Sådan hjælper Nexus Marketing dig</h3>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Vi tilbyder dedikerede, professionelle mødebookere med omfattende erfaring inden for B2B-salg. Vores team har bevist succes med at arrangere salgsmøder for virksomheder inden for IT, forretningsudvikling, konsulentydelser, markedsføring, økonomi, HR, transport og logistik.
-                </p>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Vi arbejder ikke bare som eksterne telefonpasser - vi bliver en forlængelse af dit salgsteam. Vi sætter os grundigt ind i din virksomhed, dine produkter, dine værdier og din målgruppe. Vi udvikler skræddersyede kommunikationsstrategier og sikrer, at hvert møde vi booker, har reelt potentiale.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Brancher vi betjener</h2>
-
-              <p className="text-gray-700 text-center mb-12 text-lg">
-                Vi har dokumenteret erfaring med mødebooking i følgende brancher:
-              </p>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {providers.map((provider, index) => (
-                  <div key={index} className="flex items-start p-6 bg-blue-50 rounded-lg border border-blue-100">
-                    <CheckCircle className="text-blue-600 mr-4 flex-shrink-0 mt-1" size={24} />
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">{provider.name}</h3>
-                      <p className="text-gray-600 text-sm">{provider.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-12 p-8 bg-blue-600 text-white rounded-lg text-center">
-                <Users size={48} className="mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-3">Vi booker møder i hele Danmark</h3>
-                <p className="text-lg text-blue-100 mb-6">
-                  Fra København til Aalborg, Esbjerg til Bornholm - vi håndterer fysiske møder, videomøder og telefonmøder.
-                </p>
-                <Link to="/kontakt" className="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  Få et uforpligtende pris på mødebooking der passer til dit behov <ArrowRight className="ml-2" size={20} />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
@@ -285,6 +187,104 @@ const MeetingBookingPage: React.FC = () => {
                 <Link to="/kontakt" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700">
                   Kontakt os for rådgivning <ArrowRight className="ml-2" size={18} />
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold mb-4 text-gray-900">Fordele ved professionel mødebooking</h2>
+                <p className="text-xl text-gray-600">Hvorfor virksomheder vælger ekstern mødebooking</p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div className="text-blue-600 mb-4">
+                      <benefit.icon size={40} />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900">{benefit.title}</h3>
+                    <p className="text-gray-600">{benefit.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Brancher vi betjener</h2>
+
+              <p className="text-gray-700 text-center mb-12 text-lg max-w-3xl mx-auto">
+                Vi har dokumenteret erfaring med mødebooking i følgende brancher:
+              </p>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {providers.map((provider, index) => (
+                  <div key={index} className="flex items-start p-5 bg-blue-50 rounded-lg border border-blue-100">
+                    <CheckCircle className="text-blue-600 mr-3 flex-shrink-0 mt-1" size={22} />
+                    <div className="min-w-0">
+                      <h3 className="font-semibold text-gray-900 mb-1 text-sm leading-tight">{provider.name}</h3>
+                      <p className="text-gray-600 text-xs leading-snug">{provider.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12 p-8 bg-blue-600 text-white rounded-lg text-center">
+                <Users size={48} className="mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-3">Vi booker møder i hele Danmark</h3>
+                <p className="text-lg text-blue-100 mb-6">
+                  Fra København til Aalborg, Esbjerg til Bornholm - vi håndterer fysiske møder, videomøder og telefonmøder.
+                </p>
+                <Link to="/kontakt" className="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Få et uforpligtende pris på mødebooking der passer til dit behov <ArrowRight className="ml-2" size={20} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="prose prose-lg max-w-none">
+                <h2 className="text-3xl font-bold mb-6 text-gray-900">Hvad er professionel mødebooking?</h2>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Mødebooking er en effektiv marketingstrategi, hvor erfarne specialister kontakter potentielle kunder på vegne af din virksomhed for at booke kvalificerede salgsmøder. I en verden præget af digital markedsføring forbliver direkte, personlig kontakt en af de mest pålidelige veje til nye kunder - især i B2B-segmentet.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 mt-8 text-gray-900">Hvorfor investere i mødebooking?</h3>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Selvom SEO, sociale medier og andre online marketingaktiviteter er afgørende i dagens forretningsverden, skal du stadig have direkte dialog med dine potentielle kunder. Cold calling og mødebooking giver dokumenterbare resultater: Ring til 100 kvalificerede kundeemner, og du kan typisk forvente 15-20 konkrete salgsmøder på kort sigt plus en pipeline af leads til fremtidig opfølgning.
+                </p>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Udfordringen er, at mødebooking er tidskrævende og kræver dedikeret fokus. I en travl hverdag kan det være svært at opretholde konsistent mødebooking samtidig med, at du driver forretning. Det er her, professionelle mødebooking-partnere kommer ind i billedet.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 mt-8 text-gray-900">Dokumenteret effekt i en digital tidsalder</h3>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Mange virksomheder overser værdien af direkte kundekontakt i jagten på digitale løsninger. Men her er realiteten: Dine konkurrenter, der aktivt arbejder med mødebooking, skaber løbende nye forretningsmuligheder, mens andre venter på, at hjemmesiden eller LinkedIn genererer leads. Effektiv mødebooking giver dig en konkurrencefordel, fordi mange vælger det fra - de synes, det er for krævende eller ressourcetungt.
+                </p>
+
+                <h3 className="text-2xl font-bold mb-4 mt-8 text-gray-900">Sådan hjælper Nexus Marketing dig</h3>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Vi tilbyder dedikerede, professionelle mødebookere med omfattende erfaring inden for B2B-salg. Vores team har bevist succes med at arrangere salgsmøder for virksomheder inden for IT, forretningsudvikling, konsulentydelser, markedsføring, økonomi, HR, transport og logistik.
+                </p>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Vi arbejder ikke bare som eksterne telefonpasser - vi bliver en forlængelse af dit salgsteam. Vi sætter os grundigt ind i din virksomhed, dine produkter, dine værdier og din målgruppe. Vi udvikler skræddersyede kommunikationsstrategier og sikrer, at hvert møde vi booker, har reelt potentiale.
+                </p>
               </div>
             </div>
           </div>
