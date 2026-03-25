@@ -80,20 +80,68 @@ const HomePage: React.FC = () => {
 
   const industries = [
     {
-      name: 'IT & Software',
-      description: 'Specialiseret erfaring med salg af IT-løsninger og software til virksomheder.'
+      name: 'SaaS-løsninger',
+      description: 'Møder med tech-savvy beslutningstagere og CTO\'er'
     },
     {
-      name: 'Konsulent & Rådgivning',
-      description: 'Ekspertise i at booke møder for konsulenter og rådgivningsvirksomheder.'
+      name: 'IT-konsulentvirksomheder',
+      description: 'Salgsmøder med beslutningstagere'
     },
     {
-      name: 'Industri & Produktion',
-      description: 'Erfaring med B2B salg inden for industri- og produktionssektoren.'
+      name: 'Forretningsudvikling',
+      description: 'B2B-møder med C-level executives'
     },
     {
-      name: 'Energi & Miljø',
-      description: 'Fokus på bæredygtige løsninger og energioptimering til erhverv.'
+      name: 'Markedsføring & kommunikation',
+      description: 'Møder med marketingchefer'
+    },
+    {
+      name: 'Digitale bureauer og webdesign',
+      description: 'Møder med virksomheder der søger online synlighed'
+    },
+    {
+      name: 'Økonomi & revision',
+      description: 'Kvalificerede møder med CFO\'er'
+    },
+    {
+      name: 'HR & rekruttering',
+      description: 'Møder med HR-direktører'
+    },
+    {
+      name: 'Transport & logistik',
+      description: 'Salgsmøder med indkøbschefer'
+    },
+    {
+      name: 'LED belysning og energiløsninger',
+      description: 'Møder om energieffektive løsninger til erhverv'
+    },
+    {
+      name: 'Strøm og energioptimering',
+      description: 'B2C og B2B møder om energibesparelser'
+    },
+    {
+      name: 'Kaffeservice til erhverv',
+      description: 'Møder med facility managers og indkøbsansvarlige'
+    },
+    {
+      name: 'Solenergi og vedvarende energi',
+      description: 'Møder om grøn omstilling og bæredygtighed'
+    },
+    {
+      name: 'Måtteservice og facility management',
+      description: 'Møder om arbejdsmiljø og rengøringsløsninger'
+    },
+    {
+      name: 'Pensionsrådgivning',
+      description: 'Møder med privatpersoner og virksomheder om pensionsordninger'
+    },
+    {
+      name: 'Inkasso og debitorhåndtering',
+      description: 'Møder om professionel gældinddrivelse'
+    },
+    {
+      name: 'Serviceydelser generelt',
+      description: 'B2B møder på tværs af servicebrancherne'
     }
   ];
 
@@ -226,15 +274,15 @@ const HomePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
-              <div 
+              <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md fade-in"
-                style={{ animationDelay: `${index * 0.15}s` }}
+                className="bg-white p-6 rounded-lg shadow-md fade-in hover:shadow-lg transition-shadow"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="text-xl font-semibold mb-3">{industry.name}</h3>
-                <p className="text-gray-600">{industry.description}</p>
+                <h3 className="text-lg font-semibold mb-2 text-blue-600">{industry.name}</h3>
+                <p className="text-gray-600 text-sm">{industry.description}</p>
               </div>
             ))}
           </div>
