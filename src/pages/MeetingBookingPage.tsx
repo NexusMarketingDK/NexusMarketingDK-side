@@ -100,7 +100,7 @@ const MeetingBookingPage: React.FC = () => {
       <SEO
         title="Pris på mødebooking | Sammenlign priser (2026)"
         description="Få 3 gratis tilbud på professionel mødebooking. No Cure No Pay eller pakkeløsning. 15-20 møder per 100 opkald. Erfarne B2B-mødebookere i hele Danmark."
-        canonical="https://nexusmarketing.dk/modebooking"
+        canonical="https://nexusmarketing.dk/modebooking-priser"
         keywords="pris på mødebooking, mødebooking priser, mødebooking firma, telemarketing, B2B salgsmøder, no cure no pay"
       />
 

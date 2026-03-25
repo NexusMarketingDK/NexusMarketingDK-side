@@ -488,7 +488,7 @@ const Telesalg2026: React.FC = () => {
                     Nexus Marketing tilbyder erfarne telesalg- og mødebooking-teams med dokumenterede resultater. Vi håndterer alt fra lead generation til kvalificerede møder - så du kan fokusere på at lukke deals. Kontakt os for en uforpligtende snak om hvordan vi kan hjælpe.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link to="/modebooking" className="inline-block px-8 py-3 bg-white text-green-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                    <Link to="/modebooking-priser" className="inline-block px-8 py-3 bg-white text-green-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
                       Se vores services
                     </Link>
                     <Link to="/kontakt" className="inline-block px-8 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition-colors border-2 border-white text-center">

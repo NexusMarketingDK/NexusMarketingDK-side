@@ -143,7 +143,7 @@ const pages = [
   
   // Partner/Samarbejde pages
   {
-    path: '/modebooking',
+    path: '/modebooking-priser',
     priority: '0.9',
     changefreq: 'weekly',
     lastmod: currentDate

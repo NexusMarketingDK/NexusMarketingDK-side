@@ -426,7 +426,7 @@ const Modebooking2026: React.FC = () => {
                     Nexus Marketing specialiserer sig i B2B-mødebooking for danske virksomheder. Vi kombinerer erfarne mødebookere, moderne teknologi og dokumenterede processer til at levere kvalificerede salgsmøder. Vælg mellem No Cure No Pay eller faste pakkeløsninger.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link to="/modebooking" className="inline-block px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                    <Link to="/modebooking-priser" className="inline-block px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
                       Se mødebooking-services
                     </Link>
                     <Link to="/kontakt" className="inline-block px-8 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors border-2 border-white text-center">

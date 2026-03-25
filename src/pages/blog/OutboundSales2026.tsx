@@ -580,7 +580,7 @@ const OutboundSales2026: React.FC = () => {
                     Nexus Marketing specialiserer sig i at bygge og drive outbound sales-motorer for danske B2B-virksomheder. Vi håndterer alt fra ICP-definition og list-building til personaliseret outreach og mødebooking. Kontakt os for en uforpligtende gennemgang af hvordan vi kan hjælpe dig med at bygge predictable revenue.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link to="/modebooking" className="inline-block px-8 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                    <Link to="/modebooking-priser" className="inline-block px-8 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
                       Se vores outbound services
                     </Link>
                     <Link to="/kontakt" className="inline-block px-8 py-3 bg-indigo-700 text-white rounded-lg font-semibold hover:bg-indigo-800 transition-colors border-2 border-white text-center">

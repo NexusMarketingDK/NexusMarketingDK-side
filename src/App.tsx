@@ -113,7 +113,8 @@ function App() {
           <Route path="/digital/ai-integration" element={<AiIntegrationPage />} />
 
           {/* Meeting Booking Page */}
-          <Route path="/modebooking" element={<MeetingBookingPage />} />
+          <Route path="/modebooking-priser" element={<MeetingBookingPage />} />
+          <Route path="/modebooking" element={<Navigate to="/modebooking-priser" replace />} />
 
           {/* Lead Generation Page */}
           <Route path="/leadgenerering" element={<LeadGenerationPage />} />
