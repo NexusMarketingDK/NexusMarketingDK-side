@@ -19,23 +19,6 @@ const PricingPage: React.FC = () => {
 
   const pricingModels = [
     {
-      title: 'No Cure No Pay',
-      subtitle: 'Betal kun for resultater',
-      description: 'Den risikofrie løsning - du betaler kun for gennemførte, kvalificerede møder',
-      features: [
-        'Ingen forudgående investering',
-        'Fast pris pr. gennemført møde',
-        'Du definerer kvalitetskriterierne',
-        'Kun betaling for møder der lever op til kravene',
-        'Ingen betaling ved aflyste møder',
-        'Skalerbar efter behov',
-        'Perfekt til test af nye markeder',
-        'Resultatorienteret samarbejde'
-      ],
-      highlight: true,
-      icon: Award
-    },
-    {
       title: 'Pakkeløsning',
       subtitle: 'Fast månedlig ydelse',
       description: 'Den mest omkostningseffektive løsning til kontinuerlig mødebooking',
@@ -49,8 +32,25 @@ const PricingPage: React.FC = () => {
         'Fleksibel opsigelse',
         'Prioriteret support'
       ],
-      highlight: false,
+      highlight: true,
       icon: Target
+    },
+    {
+      title: 'No Cure No Pay',
+      subtitle: 'Betal kun for resultater',
+      description: 'Den risikofrie løsning - du betaler kun for gennemførte, kvalificerede møder',
+      features: [
+        'Ingen forudgående investering',
+        'Fast pris pr. gennemført møde',
+        'Du definerer kvalitetskriterierne',
+        'Kun betaling for møder der lever op til kravene',
+        'Ingen betaling ved aflyste møder',
+        'Skalerbar efter behov',
+        'Perfekt til test af nye markeder',
+        'Resultatorienteret samarbejde'
+      ],
+      highlight: false,
+      icon: Award
     }
   ];
 
@@ -99,24 +99,24 @@ const PricingPage: React.FC = () => {
 
   const benefits = [
     {
-      icon: Shield,
-      title: 'Nul Risiko med No Cure No Pay',
-      description: 'Betal kun for møder der rent faktisk gennemføres med kvalificerede beslutningstagere. Ingen forudgående investeringer eller månedlige faste omkostninger.'
+      icon: Target,
+      title: 'Billigste Pris per Møde',
+      description: 'Vores pakkeløsning giver den mest omkostningseffektive løsning med garanteret antal møder og laveste pris per møde.'
     },
     {
       icon: Euro,
-      title: 'Transparent Prissætning',
-      description: 'Fast pris pr. møde aftalt på forhånd. Ingen skjulte gebyrer, opsætningsomkostninger eller overraskelser på fakturaen.'
+      title: 'Fast Månedlig Pris',
+      description: 'Forudsigelig økonomi med fast månedlig ydelse. Ingen overraskelser - du ved præcis hvad du får og hvad det koster.'
     },
     {
       icon: TrendingUp,
-      title: 'Dokumenteret Succesrate',
-      description: 'Gennemsnitligt 15-20 kvalificerede salgsmøder per 100 opkald. Vores erfarne mødebookere leverer konsistente resultater.'
+      title: 'Garanteret Antal Møder',
+      description: 'Med pakkeløsning får du garanteret antal kvalificerede salgsmøder hver måned. Aflyste møder erstattes gratis.'
     },
     {
       icon: Clock,
-      title: 'Hurtig Opstart',
-      description: 'Vi kan starte mødebooking inden for 1-2 uger. De første kvalificerede møder leveres typisk i uge 2-3.'
+      title: 'Dedikeret Mødebooker',
+      description: 'Din egen dedikerede mødebooker der lærer din virksomhed at kende og optimerer løbende for bedre resultater.'
     }
   ];
 
@@ -134,8 +134,8 @@ const PricingPage: React.FC = () => {
       />
 
       <HeroSection
-        title="Tilbud på Professionel Mødebooking - No Cure No Pay"
-        subtitle="Vælg mellem No Cure No Pay (betal kun for møder) eller vores omkostningseffektive pakkeløsning. Transparente priser, erfarne mødebookere, dokumenterede resultater."
+        title="Tilbud på Professionel Mødebooking - Pakkeløsning"
+        subtitle="Vælg vores omkostningseffektive pakkeløsning eller No Cure No Pay (betal kun for møder). Transparente priser, erfarne mødebookere, dokumenterede resultater."
         ctaText="Få uforpligtende tilbud"
         ctaLink="#contact-form"
         secondaryCtaText="Ring 57 77 26 11"
@@ -245,24 +245,25 @@ const PricingPage: React.FC = () => {
                   <p className="text-gray-600 mb-4">
                     Når virksomheder søger efter tilbud på mødebooking, er prisen naturligvis en vigtig faktor.
                     Hos Nexus Marketing tilbyder vi Danmarks mest transparente og fleksible prismodeller for mødebooking.
-                    Du kan vælge mellem No Cure No Pay (betal kun for resultater) eller vores omkostningseffektive pakkeløsninger.
+                    Du kan vælge mellem vores omkostningseffektive pakkeløsning eller No Cure No Pay (betal kun for resultater).
                   </p>
                   <p className="text-gray-600">
+                    Pakkeløsninger starter fra ca. 15.000 kr./md og giver den laveste pris pr. møde med garanteret antal møder.
                     Med No Cure No Pay betaler du typisk mellem 800-2.000 kr. pr. kvalificeret møde, afhængig af kompleksitet,
-                    målgruppe og branche. Pakkeløsninger starter fra ca. 15.000 kr./md og giver den laveste pris pr. møde.
+                    målgruppe og branche.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Hvorfor vælge No Cure No Pay?</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Hvorfor vælge pakkeløsning?</h3>
                   <p className="text-gray-600 mb-4">
-                    Vores No Cure No Pay model er den ultimative risikofrie løsning. Du betaler kun for møder, der rent faktisk
-                    gennemføres med kvalificerede beslutningstagere. Ingen opsætningsgebyrer, ingen månedlige faste omkostninger,
-                    ingen betaling for aflyste møder. Dette gør det perfekt til virksomheder, der vil teste mødebooking uden stor investering.
+                    Vores pakkeløsning er den mest omkostningseffektive model til kontinuerlig mødebooking. Du får dedikeret mødebooker,
+                    garanteret antal møder hver måned, og den laveste pris per møde. Aflyste møder erstattes gratis, så du altid får
+                    det antal møder du har betalt for.
                   </p>
                   <p className="text-gray-600">
-                    Som erfaren mødebooking-firma ved vi, at vores succes afhænger af jeres succes. Derfor er vores interesser
-                    fuldstændigt aligned med jeres - vi leverer kun værdi, når I får værdifulde møder.
+                    Med fast månedlig pris får du fuld forudsigelighed i dit budget og kan planlægge din salgsindsats langt bedre.
+                    Din dedikerede mødebooker lærer din virksomhed at kende og optimerer løbende for bedre resultater måned efter måned.
                   </p>
                 </div>
               </div>
@@ -277,10 +278,10 @@ const PricingPage: React.FC = () => {
                     <p className="text-sm text-gray-600">Risiko: Fuld investering uanset resultater</p>
                   </div>
                   <div className="bg-white p-4 rounded-lg border-2 border-blue-600">
-                    <h4 className="font-semibold text-gray-900 mb-2">Nexus Marketing No Cure No Pay</h4>
-                    <p className="text-sm text-gray-700 mb-2"><strong>Månedlig omkostning:</strong> Kun betaling for møder</p>
-                    <p className="text-sm text-gray-600 mb-2">Inkluderer: Erfarne specialister, CRM, rapportering, optimering</p>
-                    <p className="text-sm text-green-600 font-semibold">Risiko: Nul - betal kun for resultater</p>
+                    <h4 className="font-semibold text-gray-900 mb-2">Nexus Marketing Pakkeløsning</h4>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Månedlig omkostning:</strong> Fra 15.000 kr./md</p>
+                    <p className="text-sm text-gray-600 mb-2">Inkluderer: Dedikeret mødebooker, garanteret møder, CRM, rapportering</p>
+                    <p className="text-sm text-green-600 font-semibold">Fordel: Laveste pris per møde + Gratis erstatning af aflyste møder</p>
                   </div>
                 </div>
               </div>
@@ -397,8 +398,8 @@ const PricingPage: React.FC = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Klar til at få flere kvalificerede salgsmøder?</h2>
             <p className="text-xl text-blue-100 mb-8">
-              Uanset om du vælger No Cure No Pay eller pakkeløsning, får du Danmarks mest erfarne mødebookere
-              til at generere kvalificerede møder for din virksomhed. Start risikofrit i dag.
+              Uanset om du vælger pakkeløsning eller No Cure No Pay, får du Danmarks mest erfarne mødebookere
+              til at generere kvalificerede møder for din virksomhed. Få den bedste pris per møde i dag.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -428,7 +429,7 @@ const PricingPage: React.FC = () => {
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Få dit personlige tilbud på mødebooking</h2>
               <p className="text-lg text-gray-600">
                 Udfyld formularen, så sender vi dig et detaljeret tilbud inden for 24 timer.
-                Vælg mellem No Cure No Pay eller vores omkostningseffektive pakkeløsning.
+                Vælg mellem vores omkostningseffektive pakkeløsning eller No Cure No Pay.
               </p>
             </div>
 
