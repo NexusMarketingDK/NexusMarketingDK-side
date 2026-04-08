@@ -1,5 +1,5 @@
 # Robots.txt for Nexus Marketing
-# Updated: 2026-04-08
+# Updated: 2026-04-01
 
 User-agent: *
 Allow: /
