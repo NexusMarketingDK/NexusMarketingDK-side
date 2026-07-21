@@ -1,0 +1,65 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/forside/",
+      "destination": "https://magnoramarketing.dk/",
+      "statusCode": 301
+    },
+    {
+      "source": "/arbejd-hjemmefra-freelance/",
+      "destination": "https://magnoramarketing.dk/karriere",
+      "statusCode": 301
+    },
+    {
+      "source": "/moedebooker-inden-for-solceller-og-vedvarende-energi/",
+      "destination": "https://magnoramarketing.dk/telemarketing",
+      "statusCode": 301
+    },
+    {
+      "source": "/privat-strom-salg/",
+      "destination": "https://magnoramarketing.dk/telemarketing",
+      "statusCode": 301
+    },
+    {
+      "source": "/samarbejde-med-nexusmarketing/",
+      "destination": "https://magnoramarketing.dk/kontakt",
+      "statusCode": 301
+    },
+    {
+      "source": "/om-nexusmarketing/",
+      "destination": "https://magnoramarketing.dk/om-os",
+      "statusCode": 301
+    },
+    {
+      "source": "/moedebooker-hjemmeside-seo-og-marketing/",
+      "destination": "https://magnoramarketing.dk/telemarketing",
+      "statusCode": 301
+    },
+    {
+      "source": "/kontakt-nexusmarketing/",
+      "destination": "https://magnoramarketing.dk/kontakt",
+      "statusCode": 301
+    },
+    {
+      "source": "/freelance-modebooker-pension/",
+      "destination": "https://magnoramarketing.dk/karriere",
+      "statusCode": 301
+    },
+    {
+      "source": "/freelancere/",
+      "destination": "https://magnoramarketing.dk/telemarketing",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvorfor-outsource/",
+      "destination": "https://magnoramarketing.dk/om-os",
+      "statusCode": 301
+    },
+    {
+      "source": "/((?!sitemap\\.xml|robots\\.txt).*)",
+      "destination": "https://magnoramarketing.dk/",
+      "statusCode": 301
+    }
+  ]
+}
