@@ -57,6 +57,28 @@
       "statusCode": 301
     },
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "nexusmarketing.dk"
+        }
+      ],
+      "destination": "https://magnoramarketing.dk/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nexusmarketing.dk"
+        }
+      ],
+      "destination": "https://magnoramarketing.dk/:path*",
+      "permanent": true
+    },
+    {
       "source": "/((?!sitemap\\.xml|robots\\.txt).*)",
       "destination": "https://magnoramarketing.dk/",
       "statusCode": 301
